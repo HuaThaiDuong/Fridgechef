@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="FridgeChef">
+  <rect width="32" height="32" rx="8" fill="#0d9488"/>
+  <path fill="#fff" d="M10.2 13.2c0-3.1 2.5-5.7 5.8-5.7s5.8 2.6 5.8 5.7c1.9.4 3.2 2 3.2 4 0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7 0-2 1.3-3.6 3.2-4z"/>
+  <rect x="8" y="18.2" width="16" height="3.2" rx="1.2" fill="#fff"/>
+  <rect x="10.5" y="22" width="11" height="2.2" rx="0.8" fill="#ccfbf1"/>
+</svg>
