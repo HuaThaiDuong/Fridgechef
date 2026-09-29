@@ -7,6 +7,17 @@ Tick the ingredients you already have. FridgeChef ranks recipes by how well they
 API details are in [`API.md`](API.md). A function-to-file map is in [`NOTES.md`](NOTES.md).
 
 ---
+## 👥 Danh sách thành viên nhóm
+
+| STT | Student Code |Student fullname | Email |
+| :---: | :---: | :--- | :--- |
+| 1 | 22BA13095 |Nguyễn Trung Dương | duongnt.22ba13095@usth.edu.vn |
+| 2 | 23BI14123 | Hứa Thái Dương | duonght.23bi14123@usth.edu.vn |
+| 3 | 23BI14160 | Nguyễn Ngọc Minh Hiếu | hieunnm.23bi14160@usth.edu.vn |
+| 4 | 23BA14271 | Dương Đức Thịnh | thinhdd.23ba14271@usth.edu.vn |
+| 5 | 22BA13225 | Hồ Nguyễn Hoàng Nam | namhnh.22ba13225@usth.edu.vn |
+| 6 | 22BA13101 | Nguyễn Thái Duy | duynt.22ba13101@usth.edu.vn |
+| 7 | 22BA13064 | Hoàng Tri Đạt | datht.22ba13064@usth.edu.vn |
 
 ## Part 1 — Project Overview & Setup
 
