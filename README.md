@@ -4,8 +4,6 @@
 
 Tick the ingredients you already have. FridgeChef ranks recipes by how well they match, lists what you're missing, and walks you through each dish step by step.
 
-API details are in [`API.md`](API.md). A function-to-file map is in [`NOTES.md`](NOTES.md).
-
 ---
 ## 👥 Danh sách thành viên nhóm
 
@@ -37,7 +35,7 @@ We picked Node.js and Express because the course covers them, the runtime handle
 
 ### Why Node.js and Express
 
-The project runs for four weeks. Node reads and returns JSON without any conversion layer, and Express adds routing with almost no configuration. That keeps the backend small enough to explain in a presentation without skipping parts. Adding a database or a framework like React would have cost time we didn't have and wouldn't change how the matching algorithm works.
+Node reads and returns JSON without any conversion layer, and Express adds routing with almost no configuration. That keeps the backend small enough to explain in a presentation without skipping parts. Adding a database or a framework like React would have cost time we didn't have and wouldn't change how the matching algorithm works.
 
 ### Running the project
 
