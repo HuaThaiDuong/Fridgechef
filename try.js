@@ -1,16 +1,19 @@
 const m = require("./server/services/matchService");
 const recipes = require("./server/data/recipes.json");
-const r001 = recipes.find((r) => r.id === "r001");
-
+ 
 function check(label, actual, expected) {
   const ok = JSON.stringify(actual) === JSON.stringify(expected);
   console.log(ok ? "OK  " : "FAIL", label, ok ? "" : `→ got ${JSON.stringify(actual)}`);
 }
-
-const one = m.matchRecipe(r001, ["egg", "tomato"]);
-check("r001 matchPercent", one.matchPercent, 50);
-check("r001 score", one.score, 40);
-check("r001 missing", one.missing.map((i) => i.name), ["onion", "garlic"]);
-check("du 4 nguyen lieu = 100%", m.matchRecipe(r001, ["egg", "tomato", "onion", "garlic"]).matchPercent, 100);
-
-console.log(r001.ingredients);
+ 
+const names = (list) => list.map((r) => r.name);
+ 
+check("khong loc = du 36 mon", m.filterRecipes(recipes).length, 36);
+check("maxTime rong = khong loc", m.filterRecipes(recipes, { maxTime: "" }).length, 36);
+check("cuisine vietnamese", names(m.filterRecipes(recipes, { cuisine: "vietnamese" })),
+  ["Tomato Fried Eggs", "Chicken Pho", "Garlic Noodles"]);
+check("vietnamese + easy", names(m.filterRecipes(recipes, { cuisine: "vietnamese", difficulty: "easy" })),
+  ["Tomato Fried Eggs", "Garlic Noodles"]);
+check("easy + toi da 15 phut", m.filterRecipes(recipes, { difficulty: "easy", maxTime: 15 }).length, 7);
+check("maxTime dang chuoi '15'", m.filterRecipes(recipes, { difficulty: "easy", maxTime: "15" }).length, 7);
+ 

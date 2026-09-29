@@ -25,6 +25,16 @@ function matchRecipes(recipes, userIngredients) {
     });
 }
 
+function filterRecipes(recipes, { cuisine, maxTime, difficulty } = {}) {
+  return recipes.filter((recipe) => {
+    if (cuisine && recipe.cuisine !== cuisine) return false;
+    if (difficulty && recipe.difficulty !== difficulty) return false;
+    if (maxTime !== undefined && maxTime !== null && maxTime !== "") {
+      if (recipe.cookTime > Number(maxTime)) return false;
+    }
+    return true;
+  });
+}
 
 
 
@@ -33,4 +43,5 @@ function matchRecipes(recipes, userIngredients) {
 module.exports = {
   matchRecipe,
   matchRecipes,
+  filterRecipes,
 };
