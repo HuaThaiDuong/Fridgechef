@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "FridgeChef — recipe recommendation via ingredient matching",
-  "main": "server/app.js",
+  "main": "",
   "scripts": {
-    "start": "node server/app.js",
-    "dev": "nodemon server/app.js",
-    "test": "node scripts/check-catalog.js"
+    "start": "",
+    "dev": ""
   },
   "engines": {
     "node": ">=18"
