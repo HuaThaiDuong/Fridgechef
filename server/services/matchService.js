@@ -52,13 +52,13 @@ function canonical(name) {
 }
 
 function matchRecipe(recipe, userIngredients) {
-  const haveSet = new Set(userIngredients || []);
+  const haveSet = new Set((userIngredients || []).map(canonical).filter(Boolean));
   const required = recipe.ingredients.filter((item) => !item.optional);
-  const have = required.filter((item) => haveSet.has(item.name));
-  const missing = required.filter((item) => !haveSet.has(item.name));
+  const have = required.filter((item) => haveSet.has(canonical(item.name)));
+  const missing = required.filter((item) => !haveSet.has(canonical(item.name)));
   const coverage = required.length === 0 ? 1 : have.length / required.length;
   const score = coverage * 100 - missing.length * 5;
- 
+
   return {
     ...recipe,
     matchPercent: Math.round(coverage * 100),
