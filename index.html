@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" data-ui="board">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FridgeChef — Recipe matching from your fridge</title>
+    <meta
+      name="description"
+      content="Tick the ingredients you have. FridgeChef matches recipes you can cook tonight."
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;600;700&family=Libre+Bodoni:wght@500;700&family=Nunito+Sans:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Public+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/ui-drafts.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M6.5 11.2C6.5 8.1 8.9 5.6 12 5.6s5.5 2.5 5.5 5.6c1.8.3 3.2 1.9 3.2 3.8 0 .3-.3.6-.6.6H3.9c-.3 0-.6-.3-.6-.6 0-1.9 1.4-3.5 3.2-3.8z" />
+              <path d="M4.5 16h15v1.6c0 .7-.6 1.2-1.2 1.2H5.7c-.7 0-1.2-.5-1.2-1.2V16z" />
+              <path d="M7 19.4h10v1.4c0 .4-.3.8-.8.8H7.8c-.4 0-.8-.4-.8-.8v-1.4z" />
+            </svg>
+          </span>
+          FridgeChef
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/" aria-current="page">My Fridge</a>
+          <a href="#recent">Recently viewed recipes</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="container hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Recipe recommendation via ingredient matching</p>
+          <h1 id="hero-title">What's in your fridge?</h1>
+          <p>
+            Tick the ingredients you already have. We’ll rank dishes by coverage,
+            show what’s missing, and get you cooking without a shopping trip.
+          </p>
+        </div>
+        <div class="hero-panel" aria-hidden="true"></div>
+      </section>
+
+      <section class="container" id="fridge" aria-labelledby="fridge-title">
+        <div class="fridge-toolbar">
+          <h2 id="fridge-title">Your ingredients</h2>
+          <p class="count">
+            <span id="selected-count">0</span> selected
+          </p>
+          <button type="button" class="btn ghost" id="clear-all">Clear all</button>
+          <button type="button" class="btn ghost" id="random-fridge">Random recipes</button>
+          <button type="button" class="btn primary" id="find-recipes">Find recipes</button>
+        </div>
+        <form id="ingredient-form"></form>
+      </section>
+
+      <section class="container results-section" id="results" aria-labelledby="results-title">
+        <div class="recent-block" id="recent" aria-labelledby="recent-title">
+          <h2 id="recent-title">Recently viewed recipes</h2>
+          <p class="small" id="recent-empty">Recipes you open on this device appear here.</p>
+          <div id="recent-grid" class="recipe-grid" hidden></div>
+        </div>
+        <div class="results-header">
+          <div>
+            <h2 id="results-title">Recipes for you</h2>
+            <p class="small">Sorted by match. Filters run on the current list.</p>
+          </div>
+          <div class="filters">
+            <label class="small">
+              Cuisine
+              <select class="filter-select" id="filter-cuisine">
+                <option value="">All cuisines</option>
+                <option value="vietnamese">Vietnamese</option>
+                <option value="italian">Italian</option>
+                <option value="japanese">Japanese</option>
+                <option value="chinese">Chinese</option>
+                <option value="thai">Thai</option>
+                <option value="mexican">Mexican</option>
+                <option value="mediterranean">Mediterranean</option>
+                <option value="indian">Indian</option>
+                <option value="korean">Korean</option>
+                <option value="french">French</option>
+                <option value="american">American</option>
+              </select>
+            </label>
+            <label class="small">
+              Max time
+              <select class="filter-select" id="filter-time">
+                <option value="">Any time</option>
+                <option value="15">15 min</option>
+                <option value="20">20 min</option>
+                <option value="30">30 min</option>
+                <option value="45">45 min</option>
+              </select>
+            </label>
+            <label class="small">
+              Difficulty
+              <select class="filter-select" id="filter-difficulty">
+                <option value="">Any level</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+              </select>
+            </label>
+            <button type="button" class="btn ghost" id="browse-all">Browse all</button>
+          </div>
+        </div>
+
+        <div id="results-grid" class="recipe-grid" hidden></div>
+        <div id="results-empty" class="empty-state">
+          <h2>No matching recipes yet</h2>
+          <p>Select ingredients, click Find recipes, or try Random recipes for one complete dish.</p>
+        </div>
+        <div id="results-error" class="error-state" hidden role="alert">
+          <h2>Couldn’t load recipes</h2>
+          <p>Please try again in a moment.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>FridgeChef — cook from what you already have.</p>
+    </footer>
+
+    <div id="toast" class="toast" hidden role="status" aria-live="polite"></div>
+
+    <dialog class="modal" id="clear-modal" aria-labelledby="clear-title">
+      <h2 id="clear-title">Clear all ingredients?</h2>
+      <p>This removes every tick in the fridge grid. You can select them again at any time.</p>
+      <div class="modal-actions">
+        <button type="button" class="btn ghost" id="cancel-clear">Cancel</button>
+        <button type="button" class="btn primary" id="confirm-clear">Clear all</button>
+      </div>
+    </dialog>
+
+    <template id="recipe-card-template">
+      <article class="recipe-card">
+        <a class="recipe-card-link" href="">
+          <img alt="" loading="lazy" referrerpolicy="no-referrer" />
+          <div class="recipe-card-body">
+            <h3></h3>
+            <div class="recipe-card-meta">
+              <span class="badge time"></span>
+              <span class="badge difficulty"></span>
+            </div>
+            <div class="match-bar"></div>
+            <p class="match-label small"></p>
+          </div>
+        </a>
+      </article>
+    </template>
+
+    <template id="skeleton-card-template">
+      <article class="skeleton-card" aria-hidden="true">
+        <div class="skeleton skeleton-image"></div>
+        <div class="skeleton skeleton-line"></div>
+        <div class="skeleton skeleton-line short"></div>
+      </article>
+    </template>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/ingredients.js"></script>
+    <script src="/js/results.js"></script>
+  </body>
+</html>
