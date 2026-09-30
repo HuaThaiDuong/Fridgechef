@@ -6,8 +6,10 @@
   "main": "server/app.js",
   "scripts": {
     "start": "node server/app.js",
-    "dev": "nodemon server/app.js"
+    "dev": "nodemon server/app.js",
+    "test": "node scripts/check-catalog.js"
   },
+  
   "engines": {
     "node": ">=18"
   },
