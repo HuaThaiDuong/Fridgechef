@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+figure,
+blockquote,
+fieldset,
+legend,
+button,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #E8590C;
+  --color-primary-hover: #D9480F;
+  --color-primary-active: #C22505;
+  --color-primary-soft: #FFF0E4;
+  --color-bg: #FFFBF5;
+  --color-surface: #FFFFFF;
+  --color-text: #1C1917;
+  --color-muted: #5C534A;
+  --color-success: #2F9E44;
+  --color-success-soft: #E6F6E9;
+  --color-warning: #F08C00;
+  --color-warning-soft: #FFF4E0;
+  --color-danger: #C92A2A;
+  --color-danger-soft: #FFE3E3;
+  --color-border: #F0E4D4;
+  --color-overlay: rgba(43, 43, 43, 0.45);
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 64px;
+  --space-7: 88px;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+  --shadow-card: 0 4px 16px rgba(28, 25, 23, 0.08);
+  --shadow-hover: 0 12px 28px rgba(232, 89, 12, 0.16);
+  --shadow-modal: 0 18px 48px rgba(43, 43, 43, 0.18);
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-size-h1: 2.25rem;
+  --font-size-h2: 1.5rem;
+  --font-size-h3: 1.125rem;
+  --font-size-body: 1rem;
+  --font-size-small: 0.8125rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --line-height-tight: 1.2;
+  --line-height-body: 1.6;
+  --header-height: 72px;
+  --container-width: 1120px;
+  --match-bar-height: 8px;
+  --border-width: 1px;
+  --border-width-thick: 2px;
+  --icon-size: 20px;
+  --logo-size: 32px;
+  --btn-height: 44px;
+  --btn-icon-size: 40px;
+  --checkbox-size: 16px;
+  --sticky-offset: 88px;
+  --hero-art-size: 220px;
+  --image-ratio: 16 / 9;
+  --transition-fast: 160ms ease;
+  --z-sticky: 20;
+  --z-header: 40;
+  --z-toast: 80;
+  --z-modal: 90;
+  --skeleton-base: #f3ebe0;
+  --skeleton-shine: #fffbf5;
+  --focus-ring: 0 0 0 3px rgba(232, 89, 12, 0.28);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  min-height: 100vh;
+  overflow-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+small,
+.small {
+  font-size: var(--font-size-small);
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--space-3);
+  top: calc(var(--space-3) * -10);
+  background: var(--color-text);
+  color: var(--color-surface);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  z-index: var(--z-modal);
+}
+
+.skip-link:focus {
+  top: var(--space-3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
