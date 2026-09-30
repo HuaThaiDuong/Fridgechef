@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-ui="board">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styleguide — FridgeChef</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;600;700&family=Libre+Bodoni:wght@500;700&family=Nunito+Sans:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Public+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/ui-drafts.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M6.5 11.2C6.5 8.1 8.9 5.6 12 5.6s5.5 2.5 5.5 5.6c1.8.3 3.2 1.9 3.2 3.8 0 .3-.3.6-.6.6H3.9c-.3 0-.6-.3-.6-.6 0-1.9 1.4-3.5 3.2-3.8z" />
+              <path d="M4.5 16h15v1.6c0 .7-.6 1.2-1.2 1.2H5.7c-.7 0-1.2-.5-1.2-1.2V16z" />
+              <path d="M7 19.4h10v1.4c0 .4-.3.8-.8.8H7.8c-.4 0-.8-.4-.8-.8v-1.4z" />
+            </svg>
+          </span>
+          FridgeChef
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/">My Fridge</a>
+          <a href="/styleguide.html" aria-current="page">Styleguide</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container styleguide">
+      <header>
+        <p class="eyebrow">Design system</p>
+        <h1>Component styleguide</h1>
+        <p>Test every shared piece here before it lands on a real page.</p>
+      </header>
+
+      <section>
+        <h2>Color</h2>
+        <div class="swatch-row">
+          <div class="swatch" style="background: var(--color-primary)"></div>
+          <div class="swatch" style="background: var(--color-bg); border: var(--border-width) solid var(--color-border)"></div>
+          <div class="swatch" style="background: var(--color-success)"></div>
+          <div class="swatch" style="background: var(--color-warning)"></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Typography</h2>
+        <h1>Heading one</h1>
+        <h2>Heading two</h2>
+        <h3>Heading three</h3>
+        <p>Body copy uses Inter and the warm ink color from the design tokens.</p>
+        <small>Small helper text for badges and match labels.</small>
+      </section>
+
+      <section>
+        <h2>Buttons</h2>
+        <div class="component-row">
+          <button type="button" class="btn primary">Primary</button>
+          <button type="button" class="btn primary" disabled>Disabled</button>
+          <button type="button" class="btn ghost">Ghost</button>
+          <button type="button" class="btn icon-only" aria-label="Close">×</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Ingredient checkbox</h2>
+        <div class="ing-grid" style="max-width: 28rem">
+          <label class="ing-item">
+            <input type="checkbox" />
+            <span>Tomato</span>
+          </label>
+          <label class="ing-item is-checked">
+            <input type="checkbox" checked />
+            <span>Eggs</span>
+          </label>
+        </div>
+      </section>
+
+      <section>
+        <h2>Recipe card</h2>
+        <div class="recipe-grid">
+          <article class="recipe-card" style="--percent: 100%">
+            <a class="recipe-card-link" href="#">
+              <img src="https://www.themealdb.com/images/media/meals/rwvw8q1765660071.jpg" alt="Tomato Fried Eggs" loading="lazy" referrerpolicy="no-referrer" />
+              <div class="recipe-card-body">
+                <h3>Tomato Fried Eggs</h3>
+                <div class="recipe-card-meta">
+                  <span class="badge time">15 min</span>
+                  <span class="badge difficulty easy">Easy</span>
+                </div>
+                <div class="match-bar match-full"></div>
+                <p class="match-label">100% match</p>
+              </div>
+            </a>
+          </article>
+          <article class="skeleton-card" aria-hidden="true">
+            <div class="skeleton skeleton-image"></div>
+            <div class="skeleton skeleton-line"></div>
+            <div class="skeleton skeleton-line short"></div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Toast and modal</h2>
+        <div class="component-row">
+          <button type="button" class="btn ghost" id="show-toast">Show toast</button>
+          <button type="button" class="btn ghost" id="show-modal">Show modal</button>
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" hidden role="status">Saved to your fridge.</div>
+    <dialog class="modal" id="demo-modal">
+      <h2>Example modal</h2>
+      <p>Use this for confirmations such as clearing the fridge.</p>
+      <div class="modal-actions">
+        <button type="button" class="btn ghost" id="close-modal">Close</button>
+        <button type="button" class="btn primary" id="close-modal-primary">Got it</button>
+      </div>
+    </dialog>
+
+    <script>
+      document.getElementById("show-toast").addEventListener("click", () => {
+        const toast = document.getElementById("toast");
+        toast.hidden = false;
+        toast.className = "toast success";
+        setTimeout(() => {
+          toast.hidden = true;
+        }, 2000);
+      });
+      const modal = document.getElementById("demo-modal");
+      document.getElementById("show-modal").addEventListener("click", () => modal.showModal());
+      document.getElementById("close-modal").addEventListener("click", () => modal.close());
+      document.getElementById("close-modal-primary").addEventListener("click", () => modal.close());
+    </script>
+  </body>
+</html>
