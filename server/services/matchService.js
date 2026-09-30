@@ -1,3 +1,56 @@
+function stripDiacritics(value) {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/đ/g, "d")
+    .replace(/Đ/g, "D");
+}
+
+function normalize(value) {
+  return stripDiacritics(String(value || ""))
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+const SYNONYMS = {
+  "scallion": "green onion",
+  "spring onion": "green onion",
+  "hanh la": "green onion",
+  "hanh hoa": "green onion",
+  "ca chua": "tomato",
+  "trung": "egg",
+  "trung ga": "egg",
+  "coriander": "cilantro",
+  "capsicum": "bell pepper",
+  "aubergine": "eggplant",
+  "courgette": "zucchini",
+  "prawn": "shrimp",
+  "minced beef": "ground beef",
+  "mozzarella cheese": "mozzarella",
+  "chicken breast": "chicken",
+  "chicken thigh": "chicken",
+  "green onion": "green onion",
+  "garbanzo": "chickpea",
+  "garbanzo bean": "chickpea",
+  "chickpeas": "chickpea",
+  "lentils": "lentil",
+  "split pea": "peas",
+  "green beans": "green bean",
+  "lamb chop": "lamb",
+  "turkey breast": "turkey",
+  "mayo": "mayonnaise",
+  "parmigiano": "parmesan",
+  "parm": "parmesan",
+  "calamari": "squid",
+};
+
+function canonical(name) {
+  const key = normalize(name);
+  return SYNONYMS[key] || key;
+}
+
 function matchRecipe(recipe, userIngredients) {
   const haveSet = new Set(userIngredients || []);
   const required = recipe.ingredients.filter((item) => !item.optional);
@@ -41,6 +94,8 @@ function filterRecipes(recipes, { cuisine, maxTime, difficulty } = {}) {
 
 
 module.exports = {
+  normalize,
+  canonical,
   matchRecipe,
   matchRecipes,
   filterRecipes,

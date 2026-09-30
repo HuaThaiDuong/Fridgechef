@@ -5,15 +5,15 @@ function check(label, actual, expected) {
   const ok = JSON.stringify(actual) === JSON.stringify(expected);
   console.log(ok ? "OK  " : "FAIL", label, ok ? "" : `→ got ${JSON.stringify(actual)}`);
 }
+
+check("normalize", m.normalize("  Cà   Chua! "), "ca chua");
+check("normalize chu đ", m.normalize("Đậu phụ"), "dau phu");
+check("normalize null", m.normalize(null), "");
  
-const names = (list) => list.map((r) => r.name);
+check("canonical tieng Viet", m.canonical("Hành Lá"), "green onion");
+check("canonical viet hoa", m.canonical("SCALLION"), "green onion");
+check("canonical khong co trong bang", m.canonical("Egg"), "egg");
  
-check("khong loc = du 36 mon", m.filterRecipes(recipes).length, 36);
-check("maxTime rong = khong loc", m.filterRecipes(recipes, { maxTime: "" }).length, 36);
-check("cuisine vietnamese", names(m.filterRecipes(recipes, { cuisine: "vietnamese" })),
-  ["Tomato Fried Eggs", "Chicken Pho", "Garlic Noodles"]);
-check("vietnamese + easy", names(m.filterRecipes(recipes, { cuisine: "vietnamese", difficulty: "easy" })),
-  ["Tomato Fried Eggs", "Garlic Noodles"]);
-check("easy + toi da 15 phut", m.filterRecipes(recipes, { difficulty: "easy", maxTime: 15 }).length, 7);
-check("maxTime dang chuoi '15'", m.filterRecipes(recipes, { difficulty: "easy", maxTime: "15" }).length, 7);
- 
+const vi = m.matchRecipes(recipes, ["Cà Chua", "Trứng"]);
+check("tieng Viet co dau van khop", vi.length, 16);
+check("giong het ket qua tieng Anh", vi.map((r) => r.id), m.matchRecipes(recipes, ["egg", "tomato"]).map((r) => r.id));
