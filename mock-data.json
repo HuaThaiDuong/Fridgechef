@@ -1,3208 +1,2376 @@
 {
+  "ingredients": {
+    "groups": [
+      {
+        "id": "proteins",
+        "label": "Proteins",
+        "ingredients": [
+          {
+            "value": "chicken",
+            "label": "Chicken"
+          },
+          {
+            "value": "beef",
+            "label": "Beef"
+          },
+          {
+            "value": "pork",
+            "label": "Pork"
+          },
+          {
+            "value": "ground beef",
+            "label": "Ground beef"
+          },
+          {
+            "value": "shrimp",
+            "label": "Shrimp"
+          },
+          {
+            "value": "salmon",
+            "label": "Salmon"
+          },
+          {
+            "value": "tuna",
+            "label": "Tuna"
+          },
+          {
+            "value": "tofu",
+            "label": "Tofu"
+          },
+          {
+            "value": "egg",
+            "label": "Eggs"
+          },
+          {
+            "value": "bacon",
+            "label": "Bacon"
+          },
+          {
+            "value": "lamb",
+            "label": "Lamb"
+          },
+          {
+            "value": "turkey",
+            "label": "Turkey"
+          },
+          {
+            "value": "duck",
+            "label": "Duck"
+          },
+          {
+            "value": "squid",
+            "label": "Squid"
+          }
+        ]
+      },
+      {
+        "id": "vegetables",
+        "label": "Vegetables",
+        "ingredients": [
+          {
+            "value": "tomato",
+            "label": "Tomato"
+          },
+          {
+            "value": "onion",
+            "label": "Onion"
+          },
+          {
+            "value": "garlic",
+            "label": "Garlic"
+          },
+          {
+            "value": "ginger",
+            "label": "Ginger"
+          },
+          {
+            "value": "carrot",
+            "label": "Carrot"
+          },
+          {
+            "value": "potato",
+            "label": "Potato"
+          },
+          {
+            "value": "mushroom",
+            "label": "Mushroom"
+          },
+          {
+            "value": "spinach",
+            "label": "Spinach"
+          },
+          {
+            "value": "cabbage",
+            "label": "Cabbage"
+          },
+          {
+            "value": "bell pepper",
+            "label": "Bell pepper"
+          },
+          {
+            "value": "broccoli",
+            "label": "Broccoli"
+          },
+          {
+            "value": "cucumber",
+            "label": "Cucumber"
+          },
+          {
+            "value": "lettuce",
+            "label": "Lettuce"
+          },
+          {
+            "value": "zucchini",
+            "label": "Zucchini"
+          },
+          {
+            "value": "eggplant",
+            "label": "Eggplant"
+          },
+          {
+            "value": "chili",
+            "label": "Chili"
+          },
+          {
+            "value": "celery",
+            "label": "Celery"
+          },
+          {
+            "value": "corn",
+            "label": "Corn"
+          },
+          {
+            "value": "kale",
+            "label": "Kale"
+          },
+          {
+            "value": "asparagus",
+            "label": "Asparagus"
+          },
+          {
+            "value": "green bean",
+            "label": "Green beans"
+          },
+          {
+            "value": "peas",
+            "label": "Peas"
+          },
+          {
+            "value": "cauliflower",
+            "label": "Cauliflower"
+          },
+          {
+            "value": "sweet potato",
+            "label": "Sweet potato"
+          },
+          {
+            "value": "leek",
+            "label": "Leek"
+          },
+          {
+            "value": "chickpea",
+            "label": "Chickpeas"
+          }
+        ]
+      },
+      {
+        "id": "herbs",
+        "label": "Herbs & aromatics",
+        "ingredients": [
+          {
+            "value": "cilantro",
+            "label": "Cilantro"
+          },
+          {
+            "value": "basil",
+            "label": "Basil"
+          },
+          {
+            "value": "mint",
+            "label": "Mint"
+          },
+          {
+            "value": "green onion",
+            "label": "Green onion"
+          },
+          {
+            "value": "parsley",
+            "label": "Parsley"
+          },
+          {
+            "value": "lemongrass",
+            "label": "Lemongrass"
+          },
+          {
+            "value": "rosemary",
+            "label": "Rosemary"
+          },
+          {
+            "value": "thyme",
+            "label": "Thyme"
+          },
+          {
+            "value": "dill",
+            "label": "Dill"
+          },
+          {
+            "value": "oregano",
+            "label": "Oregano"
+          }
+        ]
+      },
+      {
+        "id": "dairy",
+        "label": "Dairy",
+        "ingredients": [
+          {
+            "value": "milk",
+            "label": "Milk"
+          },
+          {
+            "value": "butter",
+            "label": "Butter"
+          },
+          {
+            "value": "cheese",
+            "label": "Cheese"
+          },
+          {
+            "value": "yogurt",
+            "label": "Yogurt"
+          },
+          {
+            "value": "cream",
+            "label": "Cream"
+          },
+          {
+            "value": "mozzarella",
+            "label": "Mozzarella"
+          },
+          {
+            "value": "feta",
+            "label": "Feta"
+          },
+          {
+            "value": "parmesan",
+            "label": "Parmesan"
+          }
+        ]
+      },
+      {
+        "id": "grains",
+        "label": "Grains & bread",
+        "ingredients": [
+          {
+            "value": "rice",
+            "label": "Rice"
+          },
+          {
+            "value": "noodle",
+            "label": "Noodles"
+          },
+          {
+            "value": "pasta",
+            "label": "Pasta"
+          },
+          {
+            "value": "bread",
+            "label": "Bread"
+          },
+          {
+            "value": "flour",
+            "label": "Flour"
+          },
+          {
+            "value": "tortilla",
+            "label": "Tortilla"
+          },
+          {
+            "value": "pizza dough",
+            "label": "Pizza dough"
+          },
+          {
+            "value": "oats",
+            "label": "Oats"
+          },
+          {
+            "value": "quinoa",
+            "label": "Quinoa"
+          },
+          {
+            "value": "couscous",
+            "label": "Couscous"
+          }
+        ]
+      },
+      {
+        "id": "sauces",
+        "label": "Sauces & oils",
+        "ingredients": [
+          {
+            "value": "soy sauce",
+            "label": "Soy sauce"
+          },
+          {
+            "value": "fish sauce",
+            "label": "Fish sauce"
+          },
+          {
+            "value": "olive oil",
+            "label": "Olive oil"
+          },
+          {
+            "value": "sesame oil",
+            "label": "Sesame oil"
+          },
+          {
+            "value": "vinegar",
+            "label": "Vinegar"
+          },
+          {
+            "value": "coconut milk",
+            "label": "Coconut milk"
+          },
+          {
+            "value": "tomato sauce",
+            "label": "Tomato sauce"
+          },
+          {
+            "value": "miso",
+            "label": "Miso"
+          },
+          {
+            "value": "curry paste",
+            "label": "Curry paste"
+          },
+          {
+            "value": "honey",
+            "label": "Honey"
+          },
+          {
+            "value": "mayonnaise",
+            "label": "Mayonnaise"
+          },
+          {
+            "value": "mustard",
+            "label": "Mustard"
+          },
+          {
+            "value": "oyster sauce",
+            "label": "Oyster sauce"
+          },
+          {
+            "value": "chili sauce",
+            "label": "Chili sauce"
+          }
+        ]
+      },
+      {
+        "id": "pantry",
+        "label": "Pantry",
+        "ingredients": [
+          {
+            "value": "sugar",
+            "label": "Sugar"
+          },
+          {
+            "value": "salt",
+            "label": "Salt"
+          },
+          {
+            "value": "pepper",
+            "label": "Pepper"
+          },
+          {
+            "value": "peanut",
+            "label": "Peanuts"
+          },
+          {
+            "value": "sesame",
+            "label": "Sesame seeds"
+          },
+          {
+            "value": "cornstarch",
+            "label": "Cornstarch"
+          },
+          {
+            "value": "stock",
+            "label": "Stock"
+          },
+          {
+            "value": "bean sprout",
+            "label": "Bean sprouts"
+          },
+          {
+            "value": "kimchi",
+            "label": "Kimchi"
+          },
+          {
+            "value": "lentil",
+            "label": "Lentils"
+          },
+          {
+            "value": "black bean",
+            "label": "Black beans"
+          },
+          {
+            "value": "paprika",
+            "label": "Paprika"
+          },
+          {
+            "value": "cumin",
+            "label": "Cumin"
+          }
+        ]
+      },
+      {
+        "id": "fruit",
+        "label": "Fruit & extras",
+        "ingredients": [
+          {
+            "value": "lemon",
+            "label": "Lemon"
+          },
+          {
+            "value": "lime",
+            "label": "Lime"
+          },
+          {
+            "value": "avocado",
+            "label": "Avocado"
+          },
+          {
+            "value": "apple",
+            "label": "Apple"
+          },
+          {
+            "value": "mango",
+            "label": "Mango"
+          },
+          {
+            "value": "pineapple",
+            "label": "Pineapple"
+          },
+          {
+            "value": "banana",
+            "label": "Banana"
+          },
+          {
+            "value": "orange",
+            "label": "Orange"
+          },
+          {
+            "value": "strawberry",
+            "label": "Strawberry"
+          },
+          {
+            "value": "coconut",
+            "label": "Coconut"
+          }
+        ]
+      }
+    ]
+  },
   "recipes": [
     {
       "id": "r001",
-      "name": "Scrambled Eggs",
-      "cuisine": "American",
+      "name": "Tomato Fried Eggs",
+      "image": "https://www.themealdb.com/images/media/meals/rwvw8q1765660071.jpg",
+      "cookTime": 15,
       "difficulty": "easy",
-      "description": "Soft scrambled eggs with butter, served hot for breakfast.",
+      "cuisine": "vietnamese",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "egg",
-          "quantity": 4,
-          "unit": "piece",
+          "name": "egg",
+          "quantity": "3",
           "optional": false
         },
         {
-          "id": "butter",
-          "quantity": 15,
-          "unit": "g",
+          "name": "tomato",
+          "quantity": "2",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 0.25,
-          "unit": "teaspoon",
+          "name": "onion",
+          "quantity": "1/2",
           "optional": false
         },
         {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
+          "name": "garlic",
+          "quantity": "2 cloves",
+          "optional": false
+        },
+        {
+          "name": "green onion",
+          "quantity": "1 stalk",
+          "optional": true
+        },
+        {
+          "name": "salt",
+          "quantity": "to taste",
+          "optional": true
+        },
+        {
+          "name": "pepper",
+          "quantity": "to taste",
           "optional": true
         }
       ],
-      "instructions": [
-        "Crack 4 pieces of egg into a bowl, add 1/4 teaspoon of salt and beat well with a fork.",
-        "Melt 15 g of butter in a non-stick pan over low heat, swirl the pan to coat the bottom evenly with butter.",
-        "Pour in the eggs and use a spatula to gently pull from the edges to the center of the pan for about 4-5 minutes. Continue to stir gently until the eggs are completely cooked, with no liquid egg remaining; avoid high heat which will dry out the eggs.",
-        "Divide into two portions. If using pepper, sprinkle a total of 1/8 teaspoon of ground pepper on top, then serve hot."
-      ],
-      "image": "/img/r001.jpg",
-      "cookingTime": 10,
-      "servings": 2
+      "steps": [
+        "Crack 3 eggs into a bowl. Add a pinch of salt and beat with chopsticks or a fork for 20–30 seconds, just until the whites and yolks mix. Do not whip in lots of air.",
+        "Halve 2 ripe tomatoes and cut into 2 cm wedges. Thinly slice ½ onion. Smash and mince 2 garlic cloves. Slice the green onion on a bias if using.",
+        "Set a 24–26 cm nonstick or well-seasoned pan over medium-high heat. Add 1 tablespoon oil. When it shimmers, pour in the eggs.",
+        "Push the eggs with a spatula for 20–40 seconds until they are softly set, still glossy, and slightly underdone. Transfer them to a plate. Do not brown them.",
+        "Lower the heat to medium. Add a splash of oil if the pan is dry. Cook onion 1 minute until translucent, then garlic 20 seconds until fragrant (do not burn).",
+        "Add tomato wedges and a pinch of salt. Cook 3–4 minutes, stirring now and then, until the edges wrinkle and a light sauce collects in the pan.",
+        "Return the eggs. Fold them through the tomatoes for 30–45 seconds so they finish cooking in the sauce. Taste and add pepper.",
+        "Scatter green onion on top and serve immediately with rice while the tomatoes are still juicy."
+      ]
     },
     {
       "id": "r002",
-      "name": "Grilled Cheese Sandwich",
-      "cuisine": "American",
-      "difficulty": "easy",
-      "description": "Golden crispy grilled bread with melted cheddar cheese filling.",
+      "name": "Chicken Pho",
+      "image": "https://www.recipetineats.com/tachyon/2020/05/Chicken-Pho_2.jpg",
+      "cookTime": 45,
+      "difficulty": "medium",
+      "cuisine": "vietnamese",
+      "servings": 4,
       "ingredients": [
         {
-          "id": "bread",
-          "quantity": 4,
-          "unit": "slice",
+          "name": "chicken",
+          "quantity": "500 g",
           "optional": false
         },
         {
-          "id": "cheddar",
-          "quantity": 80,
-          "unit": "g",
+          "name": "noodle",
+          "quantity": "300 g",
           "optional": false
         },
         {
-          "id": "butter",
-          "quantity": 20,
-          "unit": "g",
+          "name": "onion",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
+          "name": "ginger",
+          "quantity": "1 thumb",
+          "optional": false
+        },
+        {
+          "name": "cilantro",
+          "quantity": "1 handful",
+          "optional": false
+        },
+        {
+          "name": "green onion",
+          "quantity": "2 stalks",
+          "optional": false
+        },
+        {
+          "name": "fish sauce",
+          "quantity": "2 tbsp",
+          "optional": false
+        },
+        {
+          "name": "lime",
+          "quantity": "1",
+          "optional": true
+        },
+        {
+          "name": "chili",
+          "quantity": "1",
           "optional": true
         }
       ],
-      "instructions": [
-        "Prepare 4 slices of bread, 80 g of sliced or grated cheddar cheese, and 20 g of softened butter.",
-        "Divide the cheese between 2 slices of bread. If using pepper, sprinkle a total of 1/8 teaspoon of ground pepper over the cheese; cover with the remaining 2 slices of bread.",
-        "Spread all the butter on the two outer sides of the 2 sandwiches. Heat a non-stick pan over medium-low heat.",
-        "Pan-fry each side for about 3-4 minutes, pressing lightly so the bread contacts the pan evenly. Lower the heat if the bread browns too quickly; cover with a lid for 1 minute if needed to melt the cheese completely.",
-        "Cut each sandwich into two triangles and serve hot."
-      ],
-      "image": "/img/r002.jpg",
-      "cookingTime": 15,
-      "servings": 2
+      "steps": [
+        "Peel 1 onion and slice it in half. Slice a 6 cm piece of ginger into thick coins. Char both in a dry pan or over a flame until blackened in spots, 4–6 minutes. This gives the broth a roasted smell.",
+        "Put 500 g chicken (bone-in pieces if you have them) in a pot with 2 litres of water, the charred onion, and ginger. Bring to a boil, then skim the grey foam.",
+        "Turn the heat to a gentle simmer. Cook uncovered 30–35 minutes until the chicken is cooked through (juices run clear, thickest part 74°C / 165°F).",
+        "Lift out the chicken. Strain the broth and keep it hot. Taste and season with 2–3 tablespoons fish sauce and a pinch of salt. The broth should taste savory, not only salty.",
+        "When the chicken is cool enough to handle, shred the meat, discarding skin and bones if you used bone-in pieces.",
+        "Soak or boil 300 g rice noodles according to the packet until just tender, then drain and rinse so they do not clump.",
+        "Divide noodles into 4 bowls. Top with shredded chicken. Ladle boiling broth over so the noodles heat through.",
+        "Serve with a plate of cilantro, sliced green onion, lime wedges, and sliced chili so each person seasons their own bowl."
+      ]
     },
     {
       "id": "r003",
-      "name": "Chicken Avocado Salad",
-      "cuisine": "American",
+      "name": "Garlic Butter Shrimp",
+      "image": "https://www.recipetineats.com/tachyon/2017/05/Garlic-Prawns_0.jpg",
+      "cookTime": 20,
       "difficulty": "easy",
-      "description": "Pan-seared chicken salad with avocado and fresh vegetables, tossed with an olive oil lemon dressing.",
+      "cuisine": "american",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "chicken",
-          "quantity": 250,
-          "unit": "g",
+          "name": "shrimp",
+          "quantity": "400 g",
           "optional": false
         },
         {
-          "id": "avocado",
-          "quantity": 1,
-          "unit": "piece",
+          "name": "garlic",
+          "quantity": "4 cloves",
           "optional": false
         },
         {
-          "id": "lettuce",
-          "quantity": 100,
-          "unit": "g",
+          "name": "butter",
+          "quantity": "3 tbsp",
           "optional": false
         },
         {
-          "id": "tomato",
-          "quantity": 150,
-          "unit": "g",
+          "name": "lemon",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "cucumber",
-          "quantity": 100,
-          "unit": "g",
-          "optional": false
+          "name": "parsley",
+          "quantity": "2 tbsp",
+          "optional": true
         },
         {
-          "id": "olive_oil",
-          "quantity": 2,
-          "unit": "tablespoon",
-          "optional": false
+          "name": "salt",
+          "quantity": "to taste",
+          "optional": true
         },
         {
-          "id": "lemon",
-          "quantity": 0.5,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": "salt",
-          "quantity": 0.5,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
+          "name": "pepper",
+          "quantity": "to taste",
           "optional": true
         }
       ],
-      "instructions": [
-        "Cut 250 g of boneless chicken into pieces about 1 cm thick, mix with 1/4 teaspoon of salt. Wash and drain 100 g of lettuce, 150 g of tomatoes, and 100 g of cucumbers.",
-        "Heat 1 tablespoon of olive oil in a pan over medium heat. Pan-sear the chicken for about 5-6 minutes per side until completely cooked through at the thickest part; increase time if the meat is thicker. Let it rest for 3 minutes, then slice into bite-sized pieces.",
-        "Tear the lettuce, cut the tomatoes and cucumbers. Halve 1 piece of avocado, remove the pit and skin, then slice.",
-        "Squeeze 1/2 piece of lemon, discard the seeds; mix the juice with the remaining 1 tablespoon of olive oil and 1/4 teaspoon of salt. If using pepper, add 1/8 teaspoon.",
-        "Arrange the vegetables, avocado, and chicken on two plates. Drizzle with the lemon dressing, toss gently, and serve immediately."
-      ],
-      "image": "/img/r003.jpg",
-      "cookingTime": 30,
-      "servings": 2
+      "steps": [
+        "Pat 400–500 g shrimp very dry with paper towels. Season lightly with salt and pepper. If they are frozen, thaw fully first or they will steam instead of sear.",
+        "Mince 4 garlic cloves. Juice ½ lemon and cut the rest into wedges. Chop a small handful of parsley.",
+        "Set a wide skillet over medium-high heat. Add 1 tablespoon oil. When hot, lay the shrimp in a single layer. Do not crowd the pan.",
+        "Cook 1–1½ minutes per side until the shrimp turn pink and opaque and curl into a loose C (an O usually means overcooked). Transfer to a plate.",
+        "Drop the heat to medium. Add 30 g butter. When it foams, add garlic and stir 30–45 seconds until fragrant, not brown.",
+        "Return the shrimp. Toss 30 seconds in the garlic butter. Squeeze in the lemon juice and toss again.",
+        "Turn off the heat. Stir in parsley. Taste; add a pinch of salt if needed. Serve at once with bread or rice to catch the butter."
+      ]
     },
     {
       "id": "r004",
-      "name": "Beef Burger",
-      "cuisine": "American",
+      "name": "Spaghetti Carbonara",
+      "image": "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg",
+      "cookTime": 25,
       "difficulty": "medium",
-      "description": "Homemade beef burger with fresh vegetables and a simple sauce.",
+      "cuisine": "italian",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "ground_beef",
-          "quantity": 300,
-          "unit": "g",
+          "name": "pasta",
+          "quantity": "200 g",
           "optional": false
         },
         {
-          "id": "burger_bun",
-          "quantity": 2,
-          "unit": "piece",
+          "name": "egg",
+          "quantity": "3",
           "optional": false
         },
         {
-          "id": "lettuce",
-          "quantity": 40,
-          "unit": "g",
+          "name": "bacon",
+          "quantity": "100 g",
           "optional": false
         },
         {
-          "id": "tomato",
-          "quantity": 100,
-          "unit": "g",
+          "name": "cheese",
+          "quantity": "60 g",
           "optional": false
         },
         {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "teaspoon",
+          "name": "pepper",
+          "quantity": "1 tsp",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 0.25,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "ketchup",
-          "quantity": 1,
-          "unit": "tablespoon",
-          "optional": false
-        },
-        {
-          "id": "mustard",
-          "quantity": 1,
-          "unit": "teaspoon",
-          "optional": true
-        },
-        {
-          "id": "cheddar",
-          "quantity": 40,
-          "unit": "g",
-          "optional": true
-        },
-        {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
+          "name": "salt",
+          "quantity": "for pasta water",
           "optional": true
         }
       ],
-      "instructions": [
-        "Wash and drain 40 g of lettuce, slice 100 g of tomatoes. Halve 2 pieces of burger bun. Divide 300 g of ground beef into 2 round patties about 1 cm thick, press lightly in the center of the patty.",
-        "Sprinkle evenly 1/4 teaspoon of salt on both sides of the meat. If using pepper, add a total of 1/8 teaspoon of ground pepper.",
-        "Heat 1 teaspoon of cooking oil in a pan over medium heat. Pan-sear the meat for 5-6 minutes per side, cook until completely cooked through even in the middle; do not use the outside color to determine doneness. If using cheese, place a total of 40 g of cheddar on the meat in the last minute and cover to melt.",
-        "Remove the meat. Press the cut side of the buns onto the pan for about 1 minute to warm and slightly crisp.",
-        "Spread a total of 1 tablespoon of ketchup on the buns; if using mustard, spread an additional total of 1 teaspoon. Arrange lettuce, tomato, and meat in the middle of the buns, then serve hot."
-      ],
-      "image": "/img/r004.jpg",
-      "cookingTime": 30,
-      "servings": 2
+      "steps": [
+        "Bring a large pot of water to a rolling boil and salt it well (it should taste like the sea). Keep a mug ready — you will need pasta water.",
+        "Cut 120–150 g bacon or pancetta into 1 cm strips. Grate about 60 g hard cheese (pecorino or parmesan). Crack 3 eggs into a bowl, add most of the cheese and plenty of black pepper, and beat until smooth.",
+        "Cook 320 g spaghetti until 1 minute shy of the packet time (still a firm bite). Scoop out 1 cup of starchy cooking water, then drain.",
+        "While the pasta cooks, fry the bacon in a wide pan over medium heat until the fat renders and the edges crisp, 6–8 minutes. Turn off the heat. Spoon off extra fat if the pan is swimming, leaving about 2 tablespoons.",
+        "Add the hot drained pasta to the bacon pan and toss so every strand is coated in fat. Wait 30 seconds so the pan is hot but not scorching — raw egg will scramble if it is too hot.",
+        "Pour in the egg–cheese mixture and toss hard, adding pasta water 1–2 tablespoons at a time until you have a glossy sauce that clings, not scrambled curds and not soup.",
+        "Taste. Add salt only if needed (bacon and cheese are salty) and more pepper. Plate immediately and shower with the remaining cheese."
+      ]
     },
     {
       "id": "r005",
-      "name": "Pancakes",
-      "cuisine": "American",
-      "difficulty": "easy",
-      "description": "Soft and fluffy pan-fried pancakes, can be served with a little honey.",
+      "name": "Margherita Pizza",
+      "image": "https://www.themealdb.com/images/media/meals/x0lk931587671540.jpg",
+      "cookTime": 30,
+      "difficulty": "medium",
+      "cuisine": "italian",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "flour",
-          "quantity": 120,
-          "unit": "g",
+          "name": "pizza dough",
+          "quantity": "1 ball",
           "optional": false
         },
         {
-          "id": "egg",
-          "quantity": 1,
-          "unit": "piece",
+          "name": "mozzarella",
+          "quantity": "150 g",
           "optional": false
         },
         {
-          "id": "milk",
-          "quantity": 150,
-          "unit": "ml",
+          "name": "tomato",
+          "quantity": "2",
           "optional": false
         },
         {
-          "id": "baking_powder",
-          "quantity": 1,
-          "unit": "teaspoon",
+          "name": "basil",
+          "quantity": "1 handful",
           "optional": false
         },
         {
-          "id": "sugar",
-          "quantity": 1,
-          "unit": "tablespoon",
+          "name": "olive oil",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "butter",
-          "quantity": 20,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": "salt",
-          "quantity": 0.125,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "honey",
-          "quantity": 1,
-          "unit": "tablespoon",
+          "name": "salt",
+          "quantity": "to taste",
           "optional": true
         }
       ],
-      "instructions": [
-        "Mix 120 g of flour with 1 teaspoon of baking powder, 1 tablespoon of sugar, and 1/8 teaspoon of salt in a bowl.",
-        "Melt 10 g of butter, let it cool slightly then beat with 1 piece of egg and 150 ml of milk. Pour the wet mixture into the flour, stir just enough until no dry flour remains; let the batter rest for 5 minutes.",
-        "Heat a non-stick pan over medium-low heat. Use the remaining 10 g of butter to lightly coat the pan between batches.",
-        "Scoop the batter to make about 6 small pancakes. Fry each side for 2-3 minutes; only flip when bubbles appear on the surface and edges dry up. Continue cooking until the middle of the pancake is cooked, with no wet batter remaining.",
-        "Divide the pancakes into two portions. If using honey, drizzle a total of 1 tablespoon over the pancakes when serving."
-      ],
-      "image": "/img/r005.jpg",
-      "cookingTime": 25,
-      "servings": 2
+      "steps": [
+        "Heat the oven to 250°C / 480°F with a baking stone or inverted sheet inside for at least 20 minutes. A screaming-hot surface gives you a crisp base.",
+        "If the dough is fridge-cold, rest it 20–30 minutes at room temperature so it stretches without snapping back.",
+        "On a floured surface, stretch 1 ball of pizza dough into a 28–30 cm round, leaving a slightly thicker rim. Do not use a rolling pin if you want bubbles in the crust.",
+        "Crush or blend 2 ripe tomatoes with a pinch of salt and 1 tablespoon olive oil into a loose sauce. Do not cook it — freshness is the point.",
+        "Tear 150–200 g mozzarella into small pieces and pat them dry so the pizza does not flood.",
+        "Slide the dough onto parchment or a peel. Spread a thin layer of tomato (too much makes the centre soggy). Scatter mozzarella. Drizzle a little olive oil.",
+        "Bake 8–12 minutes until the crust is blistered and the cheese is melted with light brown spots.",
+        "Out of the oven, tear fresh basil over the top. Rest 1 minute, then slice so the cheese sets slightly and does not slide off."
+      ]
     },
     {
       "id": "r006",
-      "name": "Salmon Roasted with Potatoes",
-      "cuisine": "American",
+      "name": "Chicken Teriyaki",
+      "image": "https://www.recipetineats.com/tachyon/2014/07/Teriyaki-Chicken-1.jpg",
+      "cookTime": 30,
       "difficulty": "easy",
-      "description": "Salmon roasted with potatoes and lemon on a single tray.",
+      "cuisine": "japanese",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "salmon",
-          "quantity": 300,
-          "unit": "g",
+          "name": "chicken",
+          "quantity": "400 g",
           "optional": false
         },
         {
-          "id": "potato",
-          "quantity": 350,
-          "unit": "g",
+          "name": "soy sauce",
+          "quantity": "3 tbsp",
           "optional": false
         },
         {
-          "id": "lemon",
-          "quantity": 0.5,
-          "unit": "piece",
+          "name": "sugar",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "olive_oil",
-          "quantity": 1.5,
-          "unit": "tablespoon",
+          "name": "ginger",
+          "quantity": "1 tsp grated",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 0.5,
-          "unit": "teaspoon",
+          "name": "garlic",
+          "quantity": "2 cloves",
           "optional": false
         },
         {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
+          "name": "sesame",
+          "quantity": "1 tsp",
           "optional": true
         },
         {
-          "id": "rosemary",
-          "quantity": 1,
-          "unit": "sprig",
+          "name": "green onion",
+          "quantity": "1 stalk",
           "optional": true
         }
       ],
-      "instructions": [
-        "Preheat oven to 200°C. Wash 350 g of potatoes, peel and cut into wedges about 1 cm thick. Pat dry 300 g of boneless salmon fillets, divide into 2 pieces about 2 cm thick.",
-        "Toss potatoes with 1 tablespoon of olive oil and 1/4 teaspoon of salt, spread in a single layer on a tray. If using rosemary, strip leaves from 1 sprig and sprinkle on potatoes. Roast potatoes for 20 minutes, turning once.",
-        "Rub salmon with the remaining 1/2 tablespoon of olive oil and 1/4 teaspoon of salt. If using pepper, sprinkle 1/8 teaspoon on the salmon. Cut 1/2 piece of lemon into slices.",
-        "Push potatoes to the sides, place salmon and lemon in the middle of the tray. Roast for another 15-18 minutes until salmon is completely cooked at the thickest part and potatoes are tender; increase time for thicker pieces of salmon.",
-        "Divide roasted salmon, potatoes, and lemon onto two plates, serve hot."
-      ],
-      "image": "/img/r006.jpg",
-      "cookingTime": 50,
-      "servings": 2
+      "steps": [
+        "Slice 500 g boneless chicken into 1.5 cm strips. Pat dry. Mix 4 tablespoons soy sauce, 2 tablespoons sugar (or honey), 1 minced garlic clove, and 1 teaspoon grated ginger.",
+        "Toss the chicken with half the sauce and rest 10–15 minutes at room temperature while you slice green onion and toast sesame seeds in a dry pan 1 minute until nutty.",
+        "Heat 1 tablespoon oil in a skillet over medium-high. Shake excess marinade off the chicken and sear in a single layer, 3–4 minutes per side, until browned and cooked through.",
+        "Pour in the remaining sauce. Simmer 1–2 minutes, turning the chicken, until the sauce reduces to a shiny glaze that coats a spoon.",
+        "If the glaze is too salty, add a splash of water; if too thin, cook 30 seconds more.",
+        "Rest the chicken 3 minutes so juices settle. Slice against the grain if you used larger pieces.",
+        "Serve over rice. Scatter sesame seeds and sliced green onion on top."
+      ]
     },
     {
       "id": "r007",
-      "name": "Spaghetti Aglio e Olio",
-      "cuisine": "Italian",
+      "name": "Salmon Rice Bowl",
+      "image": "https://images.themodernproper.com/production/posts/2022/Miso-Salmon-Rice-Bowl_10.jpg?w=1200&h=630&q=82&fm=jpg&fit=crop&dm=1740023623&s=40fc07a680b31512f3655c1380ce1462",
+      "cookTime": 25,
       "difficulty": "easy",
-      "description": "Spaghetti tossed with garlic and olive oil, with an optional touch of chili.",
+      "cuisine": "japanese",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "spaghetti",
-          "quantity": 180,
-          "unit": "g",
+          "name": "salmon",
+          "quantity": "2 fillets",
           "optional": false
         },
         {
-          "id": "garlic",
-          "quantity": 4,
-          "unit": "clove",
+          "name": "rice",
+          "quantity": "2 cups cooked",
           "optional": false
         },
         {
-          "id": "olive_oil",
-          "quantity": 2,
-          "unit": "tablespoon",
+          "name": "avocado",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 1,
-          "unit": "teaspoon",
+          "name": "cucumber",
+          "quantity": "1/2",
           "optional": false
         },
         {
-          "id": "parsley",
-          "quantity": 5,
-          "unit": "g",
-          "optional": true
+          "name": "soy sauce",
+          "quantity": "2 tbsp",
+          "optional": false
         },
         {
-          "id": "chili",
-          "quantity": 0.5,
-          "unit": "piece",
+          "name": "sesame",
+          "quantity": "1 tsp",
           "optional": true
         }
       ],
-      "instructions": [
-        "Boil about 1.5 liters of water, add 1 teaspoon of salt. Add 180 g of spaghetti and boil according to package instructions until al dente; reserve 100 ml of pasta water then drain the pasta.",
-        "While pasta is boiling, peel and slice 4 cloves of garlic. If using parsley, wash and chop 5 g; if using chili, remove the stem and thinly slice 1/2 piece.",
-        "Add 2 tablespoons of olive oil and garlic to a pan over low heat. Sauté for 2-3 minutes until garlic is fragrant and turns pale yellow; add chili if using and sauté for 20 seconds.",
-        "Add pasta and 3 tablespoons of the reserved pasta water to the pan. Toss over medium heat for about 1-2 minutes until oil coats evenly; add a little more pasta water if pasta is dry.",
-        "Turn off the heat. If using parsley, mix it in then divide pasta onto two plates."
-      ],
-      "image": "/img/r007.jpg",
-      "cookingTime": 20,
-      "servings": 2
+      "steps": [
+        "Rinse 200 g rice until the water runs almost clear. Cook with the usual water ratio and rest 10 minutes off the heat, lid on, so grains steam through.",
+        "Pat a 250–300 g salmon fillet dry. Season with salt. Heat a film of oil in a pan over medium-high.",
+        "Place salmon skin-side down if it has skin. Cook 4–5 minutes without moving until the skin is crisp. Flip and cook 2–3 minutes more until the centre is just opaque and flakes with a fork (about 50–52°C for medium).",
+        "Rest the salmon 2 minutes, then flake into large chunks, discarding bones and very dark bloodline if you prefer.",
+        "Slice ½ avocado and ½ cucumber into thin half-moons. Mix 1 tablespoon soy sauce with a few drops of sesame oil for a drizzle.",
+        "Spoon rice into a bowl. Arrange salmon, avocado, and cucumber in sections, not mixed, so textures stay distinct.",
+        "Drizzle soy-sesame over the bowl. Finish with sesame seeds. Eat while the rice is warm and the salmon is still tender."
+      ]
     },
     {
       "id": "r008",
-      "name": "Caprese Salad",
-      "cuisine": "Italian",
+      "name": "Vegetable Fried Rice",
+      "image": "https://www.onceuponachef.com/images/2023/12/Fried-Rice-Hero-12-800x800.jpg",
+      "cookTime": 20,
       "difficulty": "easy",
-      "description": "Fresh tomatoes and mozzarella layered with basil, drizzled with olive oil.",
+      "cuisine": "chinese",
+      "servings": 3,
       "ingredients": [
         {
-          "id": "tomato",
-          "quantity": 300,
-          "unit": "g",
+          "name": "rice",
+          "quantity": "3 cups cooked, cold",
           "optional": false
         },
         {
-          "id": "mozzarella",
-          "quantity": 150,
-          "unit": "g",
+          "name": "egg",
+          "quantity": "2",
           "optional": false
         },
         {
-          "id": "basil",
-          "quantity": 10,
-          "unit": "g",
+          "name": "carrot",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "olive_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
+          "name": "onion",
+          "quantity": "1/2",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 0.125,
-          "unit": "teaspoon",
+          "name": "garlic",
+          "quantity": "2 cloves",
           "optional": false
         },
         {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
-          "optional": true
+          "name": "soy sauce",
+          "quantity": "2 tbsp",
+          "optional": false
         },
         {
-          "id": "balsamic_vinegar",
-          "quantity": 1,
-          "unit": "teaspoon",
+          "name": "green onion",
+          "quantity": "2 stalks",
           "optional": true
         }
       ],
-      "instructions": [
-        "Wash and drain 300 g of tomatoes and 10 g of basil leaves. Drain 150 g of fresh mozzarella.",
-        "Cut tomatoes and mozzarella into slices about 5 mm thick. Alternately layer tomatoes, cheese, and basil on two plates.",
-        "Drizzle a total of 1 tablespoon of olive oil, sprinkle 1/8 teaspoon of salt. If using pepper, add 1/8 teaspoon of ground pepper; if using balsamic vinegar, drizzle an additional 1 teaspoon.",
-        "Serve immediately after dressing so the tomatoes do not release too much water."
-      ],
-      "image": "/img/r008.jpg",
-      "cookingTime": 10,
-      "servings": 2
+      "steps": [
+        "Use 3 cups cold leftover rice. If it is clumped, wet your fingers and break it into separate grains. Fresh hot rice will turn gluey.",
+        "Dice 1 carrot small (5 mm). Slice ½ onion. Mince 2 garlic cloves. Beat 2 eggs with a pinch of salt. Slice green onion.",
+        "Heat 1 tablespoon oil in a wok or large skillet over high heat until it just smokes. Pour in eggs, scramble 20 seconds until barely set, and scrape onto a plate.",
+        "Add another tablespoon of oil. Stir-fry onion and carrot 2 minutes until the carrot loses its raw crunch. Add garlic 15 seconds.",
+        "Add the rice. Press and toss 2–3 minutes so grains toast and any clumps break. You should hear a light sizzle, not steaming.",
+        "Return the egg. Pour 2 tablespoons soy sauce around the rim of the pan (it caramelizes slightly) and toss until every grain is evenly stained.",
+        "Taste. Add a little more soy if needed. Fold in green onion off the heat and serve immediately."
+      ]
     },
     {
       "id": "r009",
-      "name": "Spaghetti with Tomato Sauce",
-      "cuisine": "Italian",
-      "difficulty": "easy",
-      "description": "Spaghetti covered in a tomato sauce cooked with onion and garlic.",
+      "name": "Thai Green Curry",
+      "image": "https://www.themealdb.com/images/media/meals/sstssx1487349585.jpg",
+      "cookTime": 35,
+      "difficulty": "medium",
+      "cuisine": "thai",
+      "servings": 4,
       "ingredients": [
         {
-          "id": "spaghetti",
-          "quantity": 180,
-          "unit": "g",
+          "name": "chicken",
+          "quantity": "400 g",
           "optional": false
         },
         {
-          "id": "tomato",
-          "quantity": 350,
-          "unit": "g",
+          "name": "coconut milk",
+          "quantity": "400 ml",
           "optional": false
         },
         {
-          "id": "onion",
-          "quantity": 80,
-          "unit": "g",
+          "name": "curry paste",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "garlic",
-          "quantity": 2,
-          "unit": "clove",
+          "name": "basil",
+          "quantity": "1 handful",
           "optional": false
         },
         {
-          "id": "olive_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
+          "name": "bell pepper",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 1.25,
-          "unit": "teaspoon",
+          "name": "eggplant",
+          "quantity": "1 small",
           "optional": false
         },
         {
-          "id": "parmesan",
-          "quantity": 15,
-          "unit": "g",
-          "optional": true
-        },
-        {
-          "id": "basil",
-          "quantity": 5,
-          "unit": "g",
+          "name": "fish sauce",
+          "quantity": "1 tbsp",
           "optional": true
         }
       ],
-      "instructions": [
-        "Wash and chop 350 g of tomatoes. Peel and mince 80 g of onion and 2 cloves of garlic. If using basil, wash and tear 5 g of leaves.",
-        "Heat 1 tablespoon of olive oil over medium heat. Sauté onion for 3 minutes, add garlic and sauté for 30 seconds. Add tomatoes, 1/4 teaspoon of salt, and 80 ml of water.",
-        "Bring to a gentle boil then lower the heat, simmer sauce for 12-15 minutes; occasionally stir and mash the tomatoes until soft.",
-        "While sauce is cooking, boil about 1.5 liters of water with 1 teaspoon of salt. Boil 180 g of spaghetti according to package; reserve 100 ml of pasta water then drain the pasta.",
-        "Mix pasta into the sauce, toss for 1-2 minutes and add a little pasta water if needed. Divide onto two plates; if using parmesan, add a total of 15 g of grated cheese. Add the prepared basil if using."
-      ],
-      "image": "/img/r009.jpg",
-      "cookingTime": 30,
-      "servings": 2
+      "steps": [
+        "Cut 400 g chicken into bite-size pieces. Slice 1 bell pepper and 1 small eggplant into 2 cm chunks. Pick Thai basil leaves if using.",
+        "Heat 1 teaspoon oil in a saucepan over medium. Fry 2 tablespoons green curry paste 1 minute, stirring, until the paste smells sharp and the oil looks a little red-green.",
+        "Pour in 100 ml coconut milk from a 400 ml can and fry the paste in that cream 1–2 minutes until you see oil separate around the edges.",
+        "Add the chicken and stir to coat. Pour in the rest of the coconut milk and 100 ml water. Bring to a gentle simmer — do not boil hard or the coconut can split.",
+        "Add eggplant and pepper. Simmer 12–15 minutes until the chicken is cooked through and eggplant is silky, not spongy.",
+        "Season with 1–2 tablespoons fish sauce. Taste: it should be salty, spicy, and a little sweet from the coconut. Add a pinch of sugar only if it tastes flat.",
+        "Turn off the heat. Tear in basil so it wilts from residual heat. Serve with jasmine rice."
+      ]
     },
     {
       "id": "r010",
-      "name": "Mushroom Risotto",
-      "cuisine": "Italian",
+      "name": "Pad Thai",
+      "image": "https://www.themealdb.com/images/media/meals/rg9ze01763479093.jpg",
+      "cookTime": 30,
       "difficulty": "medium",
-      "description": "Creamy Arborio rice with button mushrooms and parmesan cheese.",
+      "cuisine": "thai",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "arborio_rice",
-          "quantity": 160,
-          "unit": "g",
+          "name": "noodle",
+          "quantity": "200 g",
           "optional": false
         },
         {
-          "id": "button_mushroom",
-          "quantity": 200,
-          "unit": "g",
+          "name": "shrimp",
+          "quantity": "200 g",
           "optional": false
         },
         {
-          "id": "onion",
-          "quantity": 80,
-          "unit": "g",
+          "name": "egg",
+          "quantity": "2",
           "optional": false
         },
         {
-          "id": "olive_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
+          "name": "bean sprout",
+          "quantity": "1 cup",
           "optional": false
         },
         {
-          "id": "butter",
-          "quantity": 15,
-          "unit": "g",
+          "name": "peanut",
+          "quantity": "3 tbsp crushed",
           "optional": false
         },
         {
-          "id": "parmesan",
-          "quantity": 30,
-          "unit": "g",
+          "name": "lime",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 0.5,
-          "unit": "teaspoon",
+          "name": "fish sauce",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
-          "optional": true
-        },
-        {
-          "id": "parsley",
-          "quantity": 5,
-          "unit": "g",
+          "name": "sugar",
+          "quantity": "1 tbsp",
           "optional": true
         }
       ],
-      "instructions": [
-        "Wipe or quickly wash 200 g of button mushrooms, drain and slice. Peel and mince 80 g of onion; grate 30 g of parmesan. Heat 700 ml of water with 1/2 teaspoon of salt and keep the water hot over low heat.",
-        "Heat 1 tablespoon of olive oil in a deep pan over medium heat. Sauté onion for 3 minutes, add mushrooms and sauté for 5 minutes until mushrooms release their liquid.",
-        "Add 160 g of dry Arborio rice, sauté for 2 minutes. Add about 100 ml of hot water at a time, stirring frequently and only adding the next batch when the previous liquid is almost absorbed.",
-        "Cook using this incremental liquid method for about 18-22 minutes until rice is tender, still slightly firm to the bite, and the mixture is creamy. You can add extra hot water beyond the initial amount if rice is not cooked.",
-        "Turn off the heat, mix in 15 g of butter and all the parmesan, let it rest for 2 minutes. If using pepper, add 1/8 teaspoon; if using parsley, wash, chop 5 g and mix it in. Divide onto two plates and serve immediately."
-      ],
-      "image": "/img/r010.jpg",
-      "cookingTime": 45,
-      "servings": 2
+      "steps": [
+        "Soak 200 g dried rice stick noodles in room-temperature water 20–30 minutes until pliable but not mushy. Drain well. (If using fresh noodles, loosen them with a splash of water.)",
+        "Mix the sauce: 3 tablespoons fish sauce, 2 tablespoons sugar, 1 tablespoon lime juice, and 1 tablespoon water. Taste — it should be salty-sour-sweet in balance.",
+        "Prep in bowls: 200 g shrimp (patted dry), 2 beaten eggs, 1 cup bean sprouts, chopped peanuts, lime wedges. Pad Thai cooks too fast to chop mid-way.",
+        "Heat a wok on high until very hot. Add 2 tablespoons oil. Stir-fry shrimp 1 minute until just pink; push to the side.",
+        "Pour in eggs and scramble 15 seconds. Add drained noodles and the sauce. Toss constantly 1–2 minutes so noodles absorb sauce and turn glossy, not broken.",
+        "Add most of the bean sprouts and toss 20 seconds so they stay crunchy. If noodles stick, splash 1 tablespoon water and keep tossing.",
+        "Plate. Top with peanuts, remaining sprouts, and lime. Squeeze lime at the table so the acid stays bright."
+      ]
     },
     {
       "id": "r011",
-      "name": "Egg Fried Rice",
-      "cuisine": "Chinese",
+      "name": "Chicken Tacos",
+      "image": "https://www.themealdb.com/images/media/meals/ypxvwv1505333929.jpg",
+      "cookTime": 25,
       "difficulty": "easy",
-      "description": "Fried rice with egg and scallions, seasoned with soy sauce.",
+      "cuisine": "mexican",
+      "servings": 3,
       "ingredients": [
         {
-          "id": "cooked_rice",
-          "quantity": 400,
-          "unit": "g",
+          "name": "chicken",
+          "quantity": "400 g",
           "optional": false
         },
         {
-          "id": "egg",
-          "quantity": 2,
-          "unit": "piece",
+          "name": "tortilla",
+          "quantity": "6",
           "optional": false
         },
         {
-          "id": "scallion",
-          "quantity": 10,
-          "unit": "g",
+          "name": "lettuce",
+          "quantity": "1 cup shredded",
           "optional": false
         },
         {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
+          "name": "tomato",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "soy_sauce",
-          "quantity": 2,
-          "unit": "teaspoon",
+          "name": "onion",
+          "quantity": "1/2",
           "optional": false
         },
         {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
-          "optional": true
+          "name": "cilantro",
+          "quantity": "1 handful",
+          "optional": false
+        },
+        {
+          "name": "lime",
+          "quantity": "1",
+          "optional": false
         }
       ],
-      "instructions": [
-        "Prepare 400 g of cooked rice, use a spoon to gently separate the grains. Wash and finely chop 10 g of scallions; crack 2 pieces of egg into a bowl and beat well.",
-        "Heat 1 tablespoon of cooking oil over medium heat. Pour in the eggs, scramble for about 1-2 minutes until eggs are cooked into small pieces.",
-        "Add rice and 2 teaspoons of soy sauce to the pan. Stir continuously for 5-7 minutes until all the rice is heated through, grains are separated, and eggs are fully cooked.",
-        "Add scallions; if using pepper, add 1/8 teaspoon of ground pepper. Stir for another 1 minute then turn off the heat, divide into two portions and serve hot."
-      ],
-      "image": "/img/r011.jpg",
-      "cookingTime": 15,
-      "servings": 2
+      "steps": [
+        "Slice 400 g chicken into strips. Toss with ½ teaspoon salt, pepper, 1 teaspoon oil, and a squeeze of lime. Rest 10 minutes.",
+        "Dice 1 tomato. Thinly slice ½ onion. Shred lettuce. Chop cilantro. Warm 6 tortillas in a dry pan 20 seconds per side and wrap in a cloth so they stay flexible.",
+        "Heat a skillet over medium-high with 1 tablespoon oil. Cook chicken in a single layer 3–4 minutes per side until browned and the thickest strip is opaque.",
+        "Rest the chicken 3 minutes, then slice across the grain into taco-size pieces so it is not chewy.",
+        "Build each tortilla: lettuce first (it insulates against soggy bread), then chicken, tomato, onion, cilantro.",
+        "Finish with lime juice. Serve immediately while tortillas are warm. Do not load so full that they split."
+      ]
     },
     {
       "id": "r012",
-      "name": "Beef and Broccoli Stir-fry",
-      "cuisine": "Chinese",
+      "name": "Beef Tacos",
+      "image": "https://www.recipetineats.com/tachyon/2018/11/Beef-Tacos_2.jpg",
+      "cookTime": 25,
       "difficulty": "easy",
-      "description": "Thinly sliced beef stir-fried with broccoli and soy sauce.",
+      "cuisine": "mexican",
+      "servings": 3,
       "ingredients": [
         {
-          "id": "beef",
-          "quantity": 250,
-          "unit": "g",
+          "name": "beef",
+          "quantity": "400 g",
           "optional": false
         },
         {
-          "id": "broccoli",
-          "quantity": 250,
-          "unit": "g",
+          "name": "tortilla",
+          "quantity": "6",
           "optional": false
         },
         {
-          "id": "garlic",
-          "quantity": 2,
-          "unit": "clove",
+          "name": "onion",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "soy_sauce",
-          "quantity": 2,
-          "unit": "teaspoon",
+          "name": "cilantro",
+          "quantity": "1 handful",
           "optional": false
         },
         {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
+          "name": "lime",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
+          "name": "chili",
+          "quantity": "1",
+          "optional": false
+        },
+        {
+          "name": "tomato",
+          "quantity": "1",
           "optional": true
         }
       ],
-      "instructions": [
-        "Slice 250 g of beef against the grain into 2 mm thick slices. Cut 250 g of broccoli into small florets, wash and drain. Peel and mince 2 cloves of garlic.",
-        "Marinate beef with 2 teaspoons of soy sauce for 10 minutes; if using pepper, add 1/8 teaspoon. Meanwhile, boil a pot of water, blanch broccoli for 2 minutes then remove and drain.",
-        "Heat 1 tablespoon of cooking oil in a wide pan over medium-high heat. Sauté garlic for 20 seconds, add beef and stir-fry for 3 minutes, separating the slices.",
-        "Add broccoli and 2 tablespoons of water, stir-fry for another 3-4 minutes until vegetables are just cooked and beef is completely cooked through. Continue cooking if meat is sliced thicker than instructed.",
-        "Turn off the heat, divide beef and broccoli onto two plates."
-      ],
-      "image": "/img/r012.jpg",
-      "cookingTime": 30,
-      "servings": 2
+      "steps": [
+        "If using a whole piece of beef, mince or slice it very thin against the grain. Season 400 g beef with salt, pepper, and ½ teaspoon chili flakes or minced chili.",
+        "Dice tomato. Chop onion and cilantro. Cut lime into wedges. Warm tortillas and keep them wrapped.",
+        "Heat a heavy skillet until very hot. Add a thin film of oil. Brown the beef without stirring for 1 minute so you get crust, then break it up and cook 3–4 minutes more until no pink remains. Drain excess fat if the pan is greasy.",
+        "Taste the beef. Add salt or chili. It should be well seasoned on its own because tortillas and lime will dilute it.",
+        "Spoon beef into tortillas. Top with onion, cilantro, and tomato.",
+        "Squeeze lime over each taco just before eating. Serve extra chili on the side."
+      ]
     },
     {
       "id": "r013",
-      "name": "Tomato Egg Drop Soup",
-      "cuisine": "Chinese",
+      "name": "Shakshuka",
+      "image": "https://www.themealdb.com/images/media/meals/g373701551450225.jpg",
+      "cookTime": 30,
       "difficulty": "easy",
-      "description": "Tomato soup with soft egg ribbons and scallions.",
+      "cuisine": "mediterranean",
+      "servings": 3,
       "ingredients": [
         {
-          "id": "tomato",
-          "quantity": 300,
-          "unit": "g",
+          "name": "egg",
+          "quantity": "4",
           "optional": false
         },
         {
-          "id": "egg",
-          "quantity": 2,
-          "unit": "piece",
+          "name": "tomato",
+          "quantity": "4",
           "optional": false
         },
         {
-          "id": "scallion",
-          "quantity": 10,
-          "unit": "g",
+          "name": "bell pepper",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "teaspoon",
+          "name": "onion",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 0.5,
-          "unit": "teaspoon",
+          "name": "garlic",
+          "quantity": "3 cloves",
           "optional": false
         },
         {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
+          "name": "chili",
+          "quantity": "1",
+          "optional": false
+        },
+        {
+          "name": "bread",
+          "quantity": "to serve",
           "optional": true
         }
       ],
-      "instructions": [
-        "Wash 300 g of tomatoes and 10 g of scallions. Cut tomatoes into small wedges, chop the scallions. Crack 2 pieces of egg into a bowl and beat well.",
-        "Heat 1 teaspoon of cooking oil in a pot over medium heat, sauté tomatoes for about 3 minutes until soft.",
-        "Add 600 ml of water and 1/2 teaspoon of salt. Bring to a boil then lower to medium heat, cook for another 3 minutes.",
-        "Keep the soup at a gentle boil, pour the egg in a thin stream around the pot and stir gently in one direction. Cook for about 2 more minutes until all the egg is set and fully cooked.",
-        "Add scallions; if using pepper, add 1/8 teaspoon. Stir gently, turn off the heat and ladle the soup into two bowls."
-      ],
-      "image": "/img/r013.jpg",
-      "cookingTime": 20,
-      "servings": 2
+      "steps": [
+        "Dice 1 onion and 1 bell pepper. Mince 3 garlic cloves and 1 chili (seeds out if you want less heat). Chop 4–5 ripe tomatoes, or use 400 g crushed tomato.",
+        "Warm 2 tablespoons olive oil in a wide skillet over medium heat. Cook onion and pepper 6–8 minutes until soft and sweet, not browned.",
+        "Add garlic and chili. Stir 30 seconds. Add tomatoes and a pinch of salt. Simmer 10–12 minutes, stirring, until the sauce thickens and a spoon dragged through leaves a trail.",
+        "Taste the sauce now — eggs will not add much salt. It should be bright and slightly spicy.",
+        "Make 4–5 wells with a spoon. Crack an egg into each well. Cover the pan. Cook 5–7 minutes until whites are set and yolks are still runny (or longer for firm yolks).",
+        "Do not stir after adding eggs. Spoon a little sauce over the whites if they lag behind the yolks.",
+        "Serve in the pan with toasted bread for scooping. Finish with extra chili if you like heat."
+      ]
     },
     {
       "id": "r014",
-      "name": "Chicken and Bell Pepper Stir-fry",
-      "cuisine": "Chinese",
-      "difficulty": "medium",
-      "description": "Bite-sized chicken stir-fried with bell peppers, onions, and soy sauce.",
+      "name": "Greek Salad",
+      "image": "https://www.recipetineats.com/tachyon/2016/07/Greek-Salad_4-680x1019.jpg",
+      "cookTime": 15,
+      "difficulty": "easy",
+      "cuisine": "mediterranean",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "chicken",
-          "quantity": 300,
-          "unit": "g",
+          "name": "cucumber",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "bell_pepper",
-          "quantity": 200,
-          "unit": "g",
+          "name": "tomato",
+          "quantity": "3",
           "optional": false
         },
         {
-          "id": "onion",
-          "quantity": 80,
-          "unit": "g",
+          "name": "onion",
+          "quantity": "1/2",
           "optional": false
         },
         {
-          "id": "garlic",
-          "quantity": 2,
-          "unit": "clove",
+          "name": "cheese",
+          "quantity": "100 g",
           "optional": false
         },
         {
-          "id": "soy_sauce",
-          "quantity": 1,
-          "unit": "tablespoon",
+          "name": "olive oil",
+          "quantity": "3 tbsp",
           "optional": false
         },
         {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
-          "optional": false
+          "name": "lettuce",
+          "quantity": "2 cups",
+          "optional": true
         },
         {
-          "id": "sugar",
-          "quantity": 0.5,
-          "unit": "teaspoon",
+          "name": "lemon",
+          "quantity": "1/2",
           "optional": true
         }
       ],
-      "instructions": [
-        "Cut 300 g of boneless chicken into pieces about 2 cm. Wash 200 g of bell pepper, remove the stem and seeds, then cut into pieces. Peel and cut 80 g of onion into wedges; mince 2 cloves of garlic.",
-        "Marinate chicken with 1 tablespoon of soy sauce and 2 tablespoons of water; if using sugar, add 1/2 teaspoon. Marinate for 10 minutes.",
-        "Heat 1 tablespoon of cooking oil over medium heat. Sauté garlic for 20 seconds, add chicken along with its marinade and stir-fry for 5 minutes.",
-        "Add 50 ml of water, cover and cook over medium-low heat for about 8 minutes. Then add onions and bell peppers, uncover and stir-fry for another 4-5 minutes.",
-        "Cook until chicken is completely cooked through at the thickest part and vegetables are just tender; increase time if chicken pieces are larger than instructed. Stir until sauce coats evenly, turn off the heat and divide into two portions."
-      ],
-      "image": "/img/r014.jpg",
-      "cookingTime": 35,
-      "servings": 2
+      "steps": [
+        "Wash and dry all vegetables well — leftover water waters down the dressing. Cut 2 tomatoes into wedges. Slice ½ cucumber into half-moons. Slice ¼ red onion paper-thin and soak 5 minutes in cold water if you want it milder, then drain.",
+        "Tear 2 handfuls of lettuce into bite-size pieces. Cube or crumble about 100 g feta or similar salty cheese.",
+        "Whisk 3 tablespoons olive oil with 1 tablespoon lemon juice and a pinch of salt and pepper until slightly thick.",
+        "In a wide bowl, toss lettuce, tomato, cucumber, and onion with most of the dressing. Taste; the vegetables should be coated, not swimming.",
+        "Scatter cheese on top rather than mixing hard, so it does not dissolve into mush.",
+        "Drizzle the remaining dressing over the cheese. Serve at once; dressed salad wilts in 15 minutes."
+      ]
     },
     {
       "id": "r015",
-      "name": "Greek Salad",
-      "cuisine": "Mediterranean",
-      "difficulty": "easy",
-      "description": "Fresh vegetable salad with feta cheese, lemon, and olive oil.",
+      "name": "Butter Chicken",
+      "image": "https://www.recipetineats.com/tachyon/2015/07/Butter-Chicken_0.jpg",
+      "cookTime": 40,
+      "difficulty": "medium",
+      "cuisine": "indian",
+      "servings": 4,
       "ingredients": [
         {
-          "id": "cucumber",
-          "quantity": 200,
-          "unit": "g",
+          "name": "chicken",
+          "quantity": "500 g",
           "optional": false
         },
         {
-          "id": "tomato",
-          "quantity": 200,
-          "unit": "g",
+          "name": "butter",
+          "quantity": "3 tbsp",
           "optional": false
         },
         {
-          "id": "red_onion",
-          "quantity": 50,
-          "unit": "g",
+          "name": "tomato",
+          "quantity": "3",
           "optional": false
         },
         {
-          "id": "feta",
-          "quantity": 100,
-          "unit": "g",
+          "name": "cream",
+          "quantity": "1/2 cup",
           "optional": false
         },
         {
-          "id": "olive_oil",
-          "quantity": 1.5,
-          "unit": "tablespoon",
+          "name": "yogurt",
+          "quantity": "1/2 cup",
           "optional": false
         },
         {
-          "id": "lemon",
-          "quantity": 0.5,
-          "unit": "piece",
+          "name": "garlic",
+          "quantity": "3 cloves",
           "optional": false
         },
         {
-          "id": "oregano",
-          "quantity": 0.5,
-          "unit": "teaspoon",
-          "optional": true
-        },
-        {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
-          "optional": true
+          "name": "ginger",
+          "quantity": "1 tbsp",
+          "optional": false
         }
       ],
-      "instructions": [
-        "Wash 200 g of cucumber and 200 g of tomatoes, cut into bite-sized pieces. Peel 50 g of red onion then thinly slice.",
-        "Cut 100 g of feta into small pieces. Squeeze 1/2 piece of lemon, remove seeds, and mix the juice with 1.5 tablespoons of olive oil.",
-        "Place vegetables in a bowl, drizzle with dressing and toss gently. If using oregano, add 1/2 teaspoon of dried oregano; if using pepper, add 1/8 teaspoon of ground pepper.",
-        "Place feta on top then divide into two portions, serve immediately."
-      ],
-      "image": "/img/r015.jpg",
-      "cookingTime": 15,
-      "servings": 2
+      "steps": [
+        "Cut 500 g chicken into 3 cm cubes. Mix with 4 tablespoons yogurt, 1 teaspoon grated ginger, 2 minced garlic cloves, and a pinch of salt. Marinate at least 20 minutes (up to overnight in the fridge).",
+        "Chop 3 tomatoes or keep 400 g tomato puree ready. Have 30 g butter and 100 ml cream measured.",
+        "Heat 1 tablespoon oil and half the butter in a pan over medium-high. Shake marinade off the chicken and brown in batches 2–3 minutes per side. It does not need to cook through yet. Set aside.",
+        "In the same pan, lower heat to medium. Add remaining butter, then garlic and ginger 30 seconds. Add tomatoes and a pinch of salt. Cook 8–10 minutes until thick and the oil peeks at the edges.",
+        "Return the chicken plus any juices. Simmer 8 minutes until the chicken is cooked through.",
+        "Stir in cream. Simmer 2 minutes on low — do not boil hard or the cream can split. Taste for salt.",
+        "Rest 2 minutes off the heat. Serve with rice or bread. The sauce should coat the chicken, not sit as a thin soup."
+      ]
     },
     {
       "id": "r016",
-      "name": "Chickpea Hummus",
-      "cuisine": "Mediterranean",
+      "name": "Vegetable Curry",
+      "image": "https://www.slimmingeats.com/blog/wp-content/uploads/2020/07/creamy-coconut-potato-curry-3.jpg",
+      "cookTime": 35,
       "difficulty": "easy",
-      "description": "Smooth blended chickpeas with tahini, lemon, and olive oil.",
+      "cuisine": "indian",
+      "servings": 4,
       "ingredients": [
         {
-          "id": "chickpeas",
-          "quantity": 250,
-          "unit": "g",
+          "name": "potato",
+          "quantity": "2",
           "optional": false
         },
         {
-          "id": "tahini",
-          "quantity": 2,
-          "unit": "tablespoon",
+          "name": "carrot",
+          "quantity": "2",
           "optional": false
         },
         {
-          "id": "lemon",
-          "quantity": 0.5,
-          "unit": "piece",
+          "name": "coconut milk",
+          "quantity": "400 ml",
           "optional": false
         },
         {
-          "id": "garlic",
-          "quantity": 1,
-          "unit": "clove",
+          "name": "curry paste",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "olive_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
+          "name": "onion",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 0.25,
-          "unit": "teaspoon",
+          "name": "garlic",
+          "quantity": "3 cloves",
           "optional": false
         },
         {
-          "id": "cumin",
-          "quantity": 0.25,
-          "unit": "teaspoon",
-          "optional": true
-        },
-        {
-          "id": "paprika",
-          "quantity": 0.125,
-          "unit": "teaspoon",
+          "name": "spinach",
+          "quantity": "2 cups",
           "optional": true
         }
       ],
-      "instructions": [
-        "Prepare 250 g of cooked and drained chickpeas; if using canned chickpeas, rinse and drain before weighing. Peel 1 clove of garlic, squeeze 1/2 piece of lemon and remove seeds.",
-        "Place chickpeas, garlic, lemon juice, 2 tablespoons of tahini, 1/4 teaspoon of salt, and 40 ml of water into a blender. If using cumin, add 1/4 teaspoon.",
-        "Blend for about 2-3 minutes, stopping to scrape down the sides of the jug. Add water a tablespoon at a time as needed and continue blending until the mixture is smooth and thick enough to hold its shape.",
-        "Divide hummus into two small bowls, use a spoon to create swirls, and drizzle a total of 1 tablespoon of olive oil on top. If using paprika, sprinkle a total of 1/8 teaspoon."
-      ],
-      "image": "/img/r016.jpg",
-      "cookingTime": 15,
-      "servings": 2
+      "steps": [
+        "Peel and cube 2 potatoes and 2 carrots into 2 cm pieces so they cook at the same rate. Slice 1 onion. Mince 3 garlic cloves. Wash a large handful of spinach.",
+        "Heat 1 tablespoon oil over medium. Soften onion 5 minutes. Add garlic 30 seconds, then 2 tablespoons curry paste. Fry 1 minute until fragrant.",
+        "Add potato and carrot. Stir to coat. Pour in 400 ml coconut milk and 150 ml water. Bring to a simmer.",
+        "Cook 15–18 minutes, stirring now and then, until a knife slides through the potato with no resistance.",
+        "Fold in spinach and cook 1 minute until wilted. If the curry is too thick, add a splash of water; if thin, simmer uncovered 2 minutes.",
+        "Taste. Add salt or a squeeze of lime if you have it. The coconut should taste rounded, not raw.",
+        "Serve hot with rice. Leftovers thicken in the fridge; loosen with water when reheating."
+      ]
     },
     {
       "id": "r017",
-      "name": "Lemon Herb Chicken",
-      "cuisine": "Mediterranean",
-      "difficulty": "medium",
-      "description": "Pan-seared chicken marinated with lemon and garlic, with optional rosemary and thyme.",
+      "name": "Kimchi Fried Rice",
+      "image": "https://www.recipetineats.com/tachyon/2021/03/Kimchi-Fried-Rice_7.jpg",
+      "cookTime": 20,
+      "difficulty": "easy",
+      "cuisine": "korean",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "chicken",
-          "quantity": 350,
-          "unit": "g",
+          "name": "rice",
+          "quantity": "2 cups cooked, cold",
           "optional": false
         },
         {
-          "id": "lemon",
-          "quantity": 1,
-          "unit": "piece",
+          "name": "kimchi",
+          "quantity": "1 cup",
           "optional": false
         },
         {
-          "id": "garlic",
-          "quantity": 2,
-          "unit": "clove",
+          "name": "egg",
+          "quantity": "2",
           "optional": false
         },
         {
-          "id": "olive_oil",
-          "quantity": 1.5,
-          "unit": "tablespoon",
+          "name": "green onion",
+          "quantity": "2 stalks",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 0.5,
-          "unit": "teaspoon",
+          "name": "sesame oil",
+          "quantity": "1 tbsp",
           "optional": false
         },
         {
-          "id": "rosemary",
-          "quantity": 1,
-          "unit": "sprig",
-          "optional": true
-        },
-        {
-          "id": "thyme",
-          "quantity": 2,
-          "unit": "sprig",
-          "optional": true
-        },
-        {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
+          "name": "soy sauce",
+          "quantity": "1 tbsp",
           "optional": true
         }
       ],
-      "instructions": [
-        "Prepare 350 g of boneless chicken, cut or pound into pieces about 1.5 cm thick. Peel and mince 2 cloves of garlic. Wash 1 piece of lemon, squeeze half and slice the other half.",
-        "Marinate chicken with lemon juice, garlic, 1/2 tablespoon of olive oil, and 1/2 teaspoon of salt. If using rosemary, add stripped leaves from 1 sprig; if using thyme, add leaves from 2 sprigs; if using pepper, add 1/8 teaspoon. Marinate for 10 minutes.",
-        "Heat the remaining 1 tablespoon of olive oil in a pan over medium heat. Scrape off excess garlic to prevent burning, add chicken and pan-sear for 6-7 minutes per side.",
-        "Add 3 tablespoons of water along with the lemon slices, lower the heat and cook for another 3 minutes. The chicken must be completely cooked through at the thickest part; continue cooking if meat is thicker than instructed.",
-        "Let the chicken rest for 3 minutes before slicing. Divide onto two plates along with the lemon and pan juices."
-      ],
-      "image": "/img/r017.jpg",
-      "cookingTime": 40,
-      "servings": 2
+      "steps": [
+        "Chop 1 cup well-fermented kimchi, reserving 2 tablespoons of the brine. Slice green onion. Beat 1 egg. Have 2 cups cold rice ready, grains separated.",
+        "Heat 1 teaspoon sesame oil and 1 teaspoon neutral oil in a skillet over medium-high. Add kimchi and stir-fry 2 minutes until the edges darken slightly and smell roasted, not only pickled.",
+        "Add rice and kimchi brine. Toss 2–3 minutes, pressing clumps, until rice is hot and stained red.",
+        "Season with 1 teaspoon soy sauce. Taste: it should be spicy, salty, and tangy. Add brine if it needs more punch, soy if it needs salt.",
+        "Push rice aside. Add a drop of oil and fry the egg until the white is set and the yolk is still runny, about 2 minutes, or cook both sides if you prefer.",
+        "Serve rice in a bowl with the egg on top. Scatter green onion. Break the yolk into the rice at the table."
+      ]
     },
     {
       "id": "r018",
-      "name": "Chickpea Cucumber Salad",
-      "cuisine": "Mediterranean",
-      "difficulty": "easy",
-      "description": "Chickpeas and fresh vegetables tossed in a lemon dressing, suitable as a cold dish.",
+      "name": "Bibimbap Bowl",
+      "image": "https://www.recipetineats.com/tachyon/2019/05/Bibimbap_3.jpg",
+      "cookTime": 40,
+      "difficulty": "medium",
+      "cuisine": "korean",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "chickpeas",
-          "quantity": 200,
-          "unit": "g",
+          "name": "rice",
+          "quantity": "2 cups cooked",
           "optional": false
         },
         {
-          "id": "cucumber",
-          "quantity": 200,
-          "unit": "g",
+          "name": "beef",
+          "quantity": "200 g",
           "optional": false
         },
         {
-          "id": "tomato",
-          "quantity": 150,
-          "unit": "g",
+          "name": "spinach",
+          "quantity": "2 cups",
           "optional": false
         },
         {
-          "id": "red_onion",
-          "quantity": 50,
-          "unit": "g",
+          "name": "carrot",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "lemon",
-          "quantity": 0.5,
-          "unit": "piece",
+          "name": "egg",
+          "quantity": "2",
           "optional": false
         },
         {
-          "id": "olive_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
+          "name": "sesame oil",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 0.25,
-          "unit": "teaspoon",
+          "name": "soy sauce",
+          "quantity": "2 tbsp",
           "optional": false
-        },
-        {
-          "id": "parsley",
-          "quantity": 5,
-          "unit": "g",
-          "optional": true
-        },
-        {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
-          "optional": true
         }
       ],
-      "instructions": [
-        "Prepare 200 g of cooked and drained chickpeas; wash and drain canned chickpeas before weighing. Wash 200 g of cucumber and 150 g of tomatoes, dice them. Peel and finely chop 50 g of red onion.",
-        "Squeeze 1/2 piece of lemon, remove seeds. Mix the juice with 1 tablespoon of olive oil and 1/4 teaspoon of salt; if using pepper, add 1/8 teaspoon.",
-        "Place chickpeas and vegetables in a bowl, drizzle with dressing and toss well. If using parsley, wash and chop 5 g and mix it in.",
-        "Let the salad marinate for 5 minutes, divide into two portions and serve."
-      ],
-      "image": "/img/r018.jpg",
-      "cookingTime": 15,
-      "servings": 2
+      "steps": [
+        "Cook 2 cups rice and keep it warm. Slice 150 g beef thin against the grain and marinate 10 minutes in 1 tablespoon soy sauce and ½ teaspoon sesame oil.",
+        "Blanch a handful of spinach 30 seconds in salted water, shock in cold water, squeeze dry, and season with a drop of sesame oil and salt.",
+        "Julienne 1 carrot. Sauté in a lightly oiled pan 2 minutes until just tender but still bright. Season with a pinch of salt.",
+        "Sear the beef in a hot pan 1–2 minutes until browned but still a little pink inside if you like it tender. Do not stew it.",
+        "Fry 1 egg sunny-side up: white set, yolk runny.",
+        "Bowl: rice on the bottom, then spinach, carrot, and beef in separate piles so the bowl looks composed. Set the egg in the centre.",
+        "Drizzle 1 teaspoon sesame oil and a little soy over the top. Mix thoroughly at the table so every bite of rice gets yolk and sesame."
+      ]
     },
     {
       "id": "r019",
-      "name": "Tomato Fried Egg",
-      "cuisine": "Vietnamese",
+      "name": "French Omelette",
+      "image": "https://www.themealdb.com/images/media/meals/yvpuuy1511797244.jpg",
+      "cookTime": 10,
       "difficulty": "easy",
-      "description": "Pan-fried egg omelette with diced tomatoes and scallions.",
+      "cuisine": "french",
+      "servings": 1,
       "ingredients": [
         {
-          "id": "egg",
-          "quantity": 3,
-          "unit": "piece",
+          "name": "egg",
+          "quantity": "3",
           "optional": false
         },
         {
-          "id": "tomato",
-          "quantity": 150,
-          "unit": "g",
+          "name": "butter",
+          "quantity": "1 tbsp",
           "optional": false
         },
         {
-          "id": "scallion",
-          "quantity": 10,
-          "unit": "g",
-          "optional": false
+          "name": "cheese",
+          "quantity": "20 g",
+          "optional": true
         },
         {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
-          "optional": false
+          "name": "parsley",
+          "quantity": "1 tsp",
+          "optional": true
         },
         {
-          "id": "salt",
-          "quantity": 0.25,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
+          "name": "salt",
+          "quantity": "pinch",
           "optional": true
         }
       ],
-      "instructions": [
-        "Wash 150 g of tomatoes and 10 g of scallions. Remove the stems and finely dice the tomatoes; finely chop the scallions.",
-        "Crack 3 eggs into a bowl, add 0.25 teaspoon of salt and the scallions. If using pepper, add 0.125 teaspoon. Whisk the egg, salt, and scallion mixture evenly.",
-        "Heat 1 tablespoon of cooking oil in a non-stick pan over medium heat. Stir-fry the tomatoes for about 3 minutes until soft and the water has reduced.",
-        "Spread the tomatoes evenly in the pan, then pour the eggs over them. Reduce the heat to low, cover with a lid, and fry for 4-5 minutes until the surface of the egg sets and there is no liquid egg left.",
-        "Flip the egg using a spatula or slide it onto a plate and flip it back into the pan. Fry for another 1-2 minutes until the egg is fully cooked, cut into pieces, and divide into two portions."
-      ],
-      "image": "/img/r019.jpg",
-      "cookingTime": 15,
-      "servings": 2
+      "steps": [
+        "Crack 3 eggs into a bowl with a pinch of salt. Beat with a fork until completely even in colour, about 20 seconds. Have 20 g cold butter cut in small cubes and 30 g grated cheese ready.",
+        "Warm an 18–20 cm nonstick pan over medium-low. Add half the butter and swirl as it melts — the pan should be hot enough that a drop of egg sets in 2 seconds, not instantly brown.",
+        "Pour in the eggs. Stir constantly with a spatula in small circles, shaking the pan, for 30–45 seconds until small curds form and the mixture looks like very loose custard.",
+        "Stop stirring. Let a thin skin set on the bottom 10 seconds. Scatter cheese down the centre. Tilt the pan and fold the omelette into a cigar with the spatula.",
+        "The inside should still be slightly creamy (baveuse). If it looks dry, you have gone too far.",
+        "Roll onto a warm plate seam-side down. Rub the remaining butter on top for shine. Scatter chopped parsley. Eat immediately."
+      ]
     },
     {
       "id": "r020",
-      "name": "Tofu in Tomato Sauce",
-      "cuisine": "Vietnamese",
+      "name": "Lemon Herb Chicken",
+      "image": "https://www.ffactor.com/wp-content/uploads/2021/02/roasted-lemon-herb-chicken-scaled.jpg",
+      "cookTime": 35,
       "difficulty": "easy",
-      "description": "Pan-fried tofu cooked in a rich tomato sauce, garnished with scallions.",
+      "cuisine": "american",
+      "servings": 3,
       "ingredients": [
         {
-          "id": "tofu",
-          "quantity": 300,
-          "unit": "g",
+          "name": "chicken",
+          "quantity": "4 pieces",
           "optional": false
         },
         {
-          "id": "tomato",
-          "quantity": 300,
-          "unit": "g",
+          "name": "lemon",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "garlic",
-          "quantity": 2,
-          "unit": "clove",
+          "name": "rosemary",
+          "quantity": "2 sprigs",
           "optional": false
         },
         {
-          "id": "scallion",
-          "quantity": 10,
-          "unit": "g",
+          "name": "thyme",
+          "quantity": "4 sprigs",
           "optional": false
         },
         {
-          "id": "cooking_oil",
-          "quantity": 2,
-          "unit": "tablespoon",
+          "name": "garlic",
+          "quantity": "4 cloves",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 0.5,
-          "unit": "teaspoon",
+          "name": "olive oil",
+          "quantity": "3 tbsp",
           "optional": false
-        },
-        {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
-          "optional": true
         }
       ],
-      "instructions": [
-        "Pat dry 300 g of firm tofu and cut into 3 cm pieces. Wash and finely chop 300 g of tomatoes; wash and finely chop 10 g of scallions. Peel and mince 2 cloves of garlic.",
-        "Heat 2 tablespoons of cooking oil over medium heat. Pan-fry the tofu for 8-10 minutes, gently turning all sides until lightly golden, then remove.",
-        "Add the garlic to the remaining oil and stir for 30 seconds. Add the tomatoes and 0.5 teaspoon of salt, and stir-fry for about 4 minutes until the tomatoes are soft.",
-        "Add 100 ml of water, gently mash the tomatoes, and return the tofu to the pan. Simmer over low heat for 5 minutes, turning gently so the tofu absorbs the sauce.",
-        "Add the scallions; if using pepper, add 0.125 teaspoon. Stir gently for another 1 minute, then turn off the heat and transfer the tofu and sauce to a plate."
-      ],
-      "image": "/img/r020.jpg",
-      "cookingTime": 30,
-      "servings": 2
+      "steps": [
+        "Pat 4 chicken thighs or 2 breasts dry. Season all over with salt and pepper. Zest 1 lemon, then cut it in half. Mince 3 garlic cloves. Strip 2 rosemary sprigs and a few thyme sprigs.",
+        "Mix 2 tablespoons olive oil, lemon zest, garlic, rosemary, and thyme. Rub this paste over the chicken. Rest 15 minutes (or up to 4 hours in the fridge).",
+        "Heat the oven to 200°C / 400°F. Heat an oven-safe skillet over medium-high with 1 teaspoon oil. Sear chicken skin-side down (if it has skin) 4–5 minutes until deep golden. Flip.",
+        "Squeeze half the lemon over the pan. Transfer the skillet to the oven. Roast 12–18 minutes depending on thickness, until the thickest part reads 74°C / 165°F.",
+        "Rest the chicken on a plate 5 minutes. Tent loosely with foil so juices redistribute.",
+        "Spoon pan juices over the meat. Serve with the remaining lemon cut into wedges. The herbs should smell toasted, not burnt; if garlic browned too far, scrape it off before serving."
+      ]
     },
     {
       "id": "r021",
-      "name": "Braised Chicken with Ginger",
-      "cuisine": "Vietnamese",
-      "difficulty": "medium",
-      "description": "Bite-sized chicken braised with ginger and fish sauce until flavorful.",
+      "name": "Miso Soup",
+      "image": "https://givemeumami.com/wp-content/uploads/2024/10/miso-soup-3.jpg",
+      "cookTime": 15,
+      "difficulty": "easy",
+      "cuisine": "japanese",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "chicken",
-          "quantity": 350,
-          "unit": "g",
+          "name": "miso",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "ginger",
-          "quantity": 20,
-          "unit": "g",
+          "name": "tofu",
+          "quantity": "150 g",
           "optional": false
         },
         {
-          "id": "garlic",
-          "quantity": 2,
-          "unit": "clove",
+          "name": "green onion",
+          "quantity": "2 stalks",
           "optional": false
         },
         {
-          "id": "fish_sauce",
-          "quantity": 1,
-          "unit": "tablespoon",
+          "name": "mushroom",
+          "quantity": "4",
           "optional": false
         },
         {
-          "id": "sugar",
-          "quantity": 2,
-          "unit": "teaspoon",
+          "name": "stock",
+          "quantity": "3 cups",
           "optional": false
-        },
-        {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
-          "optional": false
-        },
-        {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
-          "optional": true
         }
       ],
-      "instructions": [
-        "Cut 350 g of boneless chicken into 2-3 cm pieces. Peel and julienne 20 g of ginger. Peel and mince 2 cloves of garlic.",
-        "Mix the chicken with 1 tablespoon of fish sauce, 2 teaspoons of sugar, and half of the ginger. If using pepper, add 0.125 teaspoon. Marinate for about 10 minutes.",
-        "Heat 1 tablespoon of cooking oil in a pot over medium heat. Stir the garlic and the remaining ginger for 30 seconds, add the chicken and the marinade, and stir for 5 minutes.",
-        "Add 200 ml of water, bring to a boil, then reduce the heat to low. Leave the lid slightly ajar and braise for 20 minutes, turning the chicken occasionally; add a little water if the pot dries out early. Continue cooking until the chicken is fully cooked and tender.",
-        "Open the lid and cook for another 3 minutes until the braising liquid slightly thickens, then turn off the heat. Divide the chicken, ginger, and braising liquid into two portions."
-      ],
-      "image": "/img/r021.jpg",
-      "cookingTime": 45,
-      "servings": 2
+      "steps": [
+        "Bring 800 ml light stock (or water plus a pinch of salt) to a bare simmer — small bubbles, not a rolling boil, or the miso will taste harsh later.",
+        "Slice 4 mushrooms thin. Cube 150 g tofu into 1.5 cm cubes. Slice 2 green onions, whites and greens separated.",
+        "Simmer mushroom and tofu in the stock 4–5 minutes until mushrooms soften and tofu is heated through. Add onion whites for the last minute.",
+        "Put 3 tablespoons miso in a small bowl. Ladle in a little hot stock and whisk until smooth with no lumps. Never dump dry miso straight into the pot — it clumps.",
+        "Turn the heat off. Stir the dissolved miso into the pot. Do not boil after this or the miso’s aroma flattens and it can separate.",
+        "Taste. Add a little more miso if it tastes thin, or a splash of stock if it is too salty.",
+        "Ladle into bowls. Top with onion greens. Serve immediately while steaming."
+      ]
     },
     {
       "id": "r022",
-      "name": "Chicken Quesadilla",
-      "cuisine": "Mexican",
+      "name": "Avocado Toast",
+      "image": "https://latourangelle.com/cdn/shop/articles/yjwm5rwslgxohiclsgiq_1024x1024.jpg?v=1619197930",
+      "cookTime": 10,
       "difficulty": "easy",
-      "description": "Crispy pan-fried tortilla filled with chicken, vegetables, and cheddar cheese.",
+      "cuisine": "american",
+      "servings": 1,
       "ingredients": [
         {
-          "id": "tortilla",
-          "quantity": 4,
-          "unit": "piece",
+          "name": "bread",
+          "quantity": "2 slices",
           "optional": false
         },
         {
-          "id": "chicken",
-          "quantity": 250,
-          "unit": "g",
+          "name": "avocado",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "cheddar",
-          "quantity": 100,
-          "unit": "g",
+          "name": "egg",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "bell_pepper",
-          "quantity": 100,
-          "unit": "g",
+          "name": "lemon",
+          "quantity": "1/2",
           "optional": false
         },
         {
-          "id": "onion",
-          "quantity": 50,
-          "unit": "g",
-          "optional": false
+          "name": "chili",
+          "quantity": "pinch of flakes",
+          "optional": true
         },
         {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
-          "optional": false
-        },
-        {
-          "id": "salt",
-          "quantity": 0.25,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "cumin",
-          "quantity": 0.25,
-          "unit": "teaspoon",
+          "name": "salt",
+          "quantity": "to taste",
           "optional": true
         }
       ],
-      "instructions": [
-        "Cut 250 g of boneless chicken into small pieces of about 1 cm. Wash 100 g of bell pepper, remove the seeds, and finely chop; peel and finely chop 50 g of onion. Grate or thinly slice 100 g of cheddar cheese.",
-        "Heat 1 tablespoon of cooking oil over medium heat. Stir-fry the onion and bell pepper for 3 minutes, add the chicken and 0.25 teaspoon of salt. If using cumin, add 0.25 teaspoon.",
-        "Stir the meat for 8-10 minutes, adding 2 tablespoons of water if the pan is dry. Cook until the chicken is fully cooked, then stir so the filling reduces its moisture.",
-        "Divide the chicken filling and cheese onto one half of each of the 4 tortillas (about 20 cm in diameter). Fold the tortillas in half and press gently.",
-        "Pan-fry the quesadillas over medium-low heat for about 2-3 minutes per side until the cheese melts and the tortilla is crispy. Cook them sequentially depending on the pan size, cut each quesadilla into triangles, and divide into two portions."
-      ],
-      "image": "/img/r022.jpg",
-      "cookingTime": 40,
-      "servings": 2
+      "steps": [
+        "Toast 2 thick slices of bread until the surface is crisp but the centre still has a little chew, 2–3 minutes in a toaster or skillet.",
+        "Halve 1 ripe avocado. Scoop the flesh into a bowl. Add a squeeze of lemon, a pinch of salt, and mash with a fork, leaving some chunks.",
+        "Taste the mash: it should be lemony enough to stay bright green and not dull. Add chili flakes or minced chili.",
+        "Fry or poach 2 eggs: for fried, medium heat, 2–3 minutes until whites set and edges barely crisp; for poached, 3 minutes in barely simmering water with a drop of vinegar.",
+        "Spread avocado thickly on the toast, going all the way to the crust so bites are not dry bread.",
+        "Set an egg on each slice. Sprinkle salt, pepper, and more chili. Eat at once so the toast does not steam soggy under the avocado."
+      ]
     },
     {
       "id": "r023",
-      "name": "Avocado Toast with Guacamole",
-      "cuisine": "Mexican",
-      "difficulty": "easy",
-      "description": "Toasted bread topped with mashed avocado, tomatoes, lime, and onions.",
+      "name": "Mushroom Risotto",
+      "image": "https://www.recipetineats.com/tachyon/2019/10/Mushroom-Risotto_7.jpg",
+      "cookTime": 40,
+      "difficulty": "hard",
+      "cuisine": "italian",
+      "servings": 3,
       "ingredients": [
         {
-          "id": "bread",
-          "quantity": 4,
-          "unit": "slice",
+          "name": "rice",
+          "quantity": "1 cup",
           "optional": false
         },
         {
-          "id": "avocado",
-          "quantity": 1,
-          "unit": "piece",
+          "name": "mushroom",
+          "quantity": "250 g",
           "optional": false
         },
         {
-          "id": "tomato",
-          "quantity": 80,
-          "unit": "g",
+          "name": "onion",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "red_onion",
-          "quantity": 30,
-          "unit": "g",
+          "name": "garlic",
+          "quantity": "2 cloves",
           "optional": false
         },
         {
-          "id": "lime",
-          "quantity": 0.5,
-          "unit": "piece",
+          "name": "butter",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 0.25,
-          "unit": "teaspoon",
+          "name": "cheese",
+          "quantity": "50 g",
           "optional": false
         },
         {
-          "id": "cilantro",
-          "quantity": 5,
-          "unit": "g",
-          "optional": true
-        },
-        {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
-          "optional": true
+          "name": "stock",
+          "quantity": "4 cups",
+          "optional": false
         }
       ],
-      "instructions": [
-        "Wash and dice 80 g of tomatoes. Peel and mince 30 g of red onion. Squeeze 0.5 piece of lime and discard the seeds.",
-        "Cut 1 avocado in half, remove the seed and peel, and use a fork to mash the avocado meat with the lime juice and 0.25 teaspoon of salt. Leave some small avocado chunks to give the guacamole a chunky texture.",
-        "Mix the tomatoes and onions into the avocado. If using cilantro, wash, mince 5 g, and add it in; if using pepper, add 0.125 teaspoon of ground pepper.",
-        "Toast 4 slices of bread using a toaster or dry pan-fry them over medium-low heat for about 1-2 minutes per side until lightly crispy.",
-        "Divide the avocado mixture onto the 4 slices of bread and serve immediately, 2 slices per portion."
-      ],
-      "image": "/img/r023.jpg",
-      "cookingTime": 15,
-      "servings": 2
+      "steps": [
+        "Warm 1 litre stock in a saucepan and keep it at a simmer. Cold stock dropped into rice stalls cooking.",
+        "Dice 1 small onion. Mince 2 garlic cloves. Slice 250 g mushrooms. Have 30 g butter and 50 g grated cheese ready. Measure 200 g short-grain or arborio rice — do not rinse it; you need the starch.",
+        "Melt half the butter in a wide pan over medium. Cook onion 4 minutes until translucent. Add mushrooms and a pinch of salt; cook 5–6 minutes until they release water and it evaporates. Add garlic 30 seconds.",
+        "Add rice. Stir 1–2 minutes until edges look translucent (tostatura). This helps grains stay separate later.",
+        "Add a ladle of hot stock. Stir until almost absorbed. Repeat, one ladle at a time, 16–20 minutes. Stir often but not frantically. The rice is done when the centre of a grain is still a tiny bit firm.",
+        "If you run out of stock before the rice is tender, use hot water. The finished risotto should flow slowly like lava, not sit in a mound or a puddle.",
+        "Off the heat, beat in remaining butter and cheese (mantecatura). Rest 1 minute. Taste for salt. Serve immediately in warm bowls — risotto waits for no one."
+      ]
     },
     {
       "id": "r024",
-      "name": "Beef Tacos",
-      "cuisine": "Mexican",
-      "difficulty": "medium",
-      "description": "Soft tortillas filled with seasoned ground beef and fresh vegetables.",
+      "name": "Tofu Stir Fry",
+      "image": "https://assets.clevelandclinic.org/transform/32647333-281e-4404-85f8-52fd95dfa1c0/tofuPepperBroccoli-1279276965-770x533-1_jpg",
+      "cookTime": 20,
+      "difficulty": "easy",
+      "cuisine": "chinese",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "ground_beef",
-          "quantity": 250,
-          "unit": "g",
+          "name": "tofu",
+          "quantity": "300 g",
           "optional": false
         },
         {
-          "id": "tortilla",
-          "quantity": 4,
-          "unit": "piece",
+          "name": "broccoli",
+          "quantity": "1 head",
           "optional": false
         },
         {
-          "id": "lettuce",
-          "quantity": 60,
-          "unit": "g",
+          "name": "bell pepper",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "tomato",
-          "quantity": 100,
-          "unit": "g",
+          "name": "garlic",
+          "quantity": "3 cloves",
           "optional": false
         },
         {
-          "id": "onion",
-          "quantity": 50,
-          "unit": "g",
+          "name": "ginger",
+          "quantity": "1 tbsp",
           "optional": false
         },
         {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "teaspoon",
+          "name": "soy sauce",
+          "quantity": "3 tbsp",
           "optional": false
         },
         {
-          "id": "cumin",
-          "quantity": 0.5,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "paprika",
-          "quantity": 0.5,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "salt",
-          "quantity": 0.25,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "cheddar",
-          "quantity": 40,
-          "unit": "g",
-          "optional": true
-        },
-        {
-          "id": "lime",
-          "quantity": 0.5,
-          "unit": "piece",
+          "name": "sesame oil",
+          "quantity": "1 tsp",
           "optional": true
         }
       ],
-      "instructions": [
-        "Wash, drain, and shred 60 g of lettuce. Dice 100 g of tomatoes; peel and mince 50 g of onion. If using cheese, grate 40 g of cheddar; if using lime, cut 0.5 piece into wedges.",
-        "Heat 1 teaspoon of cooking oil over medium heat. Add 250 g of ground beef, stir, and break it into small crumbles for about 5 minutes.",
-        "Add 0.5 teaspoon of cumin, 0.5 teaspoon of paprika, 0.25 teaspoon of salt, and 50 ml of water. Stir and continue cooking for 5-7 minutes until the meat is fully cooked and the sauce reduces.",
-        "Warm up 4 small tortillas on a dry pan for about 20-30 seconds per side. Divide the meat, lettuce, tomatoes, and onions into the middle of each tortilla.",
-        "Add cheddar and a squeeze of lime if using, fold the tortillas gently, and serve hot, 2 tacos per portion."
-      ],
-      "image": "/img/r024.jpg",
-      "cookingTime": 30,
-      "servings": 2
+      "steps": [
+        "Press 300 g tofu between towels with a plate on top for 10 minutes to squeeze out water. Cube into 2 cm pieces. Cut broccoli into small florets. Slice 1 bell pepper. Mince garlic and ginger.",
+        "Mix 3 tablespoons soy sauce, 1 teaspoon sesame oil, and 1 teaspoon sugar or honey.",
+        "Heat 2 tablespoons oil in a wok over high heat. Fry tofu until golden on at least two sides, 4–6 minutes. Remove to a plate.",
+        "Add broccoli and 2 tablespoons water. Cover 1 minute to steam-sear, then uncover and add pepper. Stir-fry 2 minutes until broccoli is bright green with a little char.",
+        "Add garlic and ginger 15 seconds. Return tofu. Pour in sauce and toss 30–45 seconds until everything is coated and the sauce clings.",
+        "Taste. Add soy if bland, a splash of water if too salty. Serve at once over rice. Tofu left sitting in sauce will go soggy."
+      ]
     },
     {
       "id": "r025",
-      "name": "Chickpea and Tomato Curry",
-      "cuisine": "Indian",
+      "name": "Club Sandwich",
+      "image": "https://f000.backblazeb2.com/file/recipekit-bucket/20240725081844-chicken-20bacon-20club-20sandwich-20main-20landscape.jpg",
+      "cookTime": 15,
       "difficulty": "easy",
-      "description": "Chickpeas cooked in a tomato sauce with curry powder and ginger.",
+      "cuisine": "american",
+      "servings": 1,
       "ingredients": [
         {
-          "id": "chickpeas",
-          "quantity": 300,
-          "unit": "g",
+          "name": "bread",
+          "quantity": "3 slices",
           "optional": false
         },
         {
-          "id": "tomato",
-          "quantity": 250,
-          "unit": "g",
+          "name": "chicken",
+          "quantity": "80 g cooked",
           "optional": false
         },
         {
-          "id": "onion",
-          "quantity": 80,
-          "unit": "g",
+          "name": "bacon",
+          "quantity": "3 slices",
           "optional": false
         },
         {
-          "id": "garlic",
-          "quantity": 2,
-          "unit": "clove",
+          "name": "lettuce",
+          "quantity": "2 leaves",
           "optional": false
         },
         {
-          "id": "ginger",
-          "quantity": 10,
-          "unit": "g",
+          "name": "tomato",
+          "quantity": "4 slices",
           "optional": false
         },
         {
-          "id": "curry_powder",
-          "quantity": 1,
-          "unit": "tablespoon",
-          "optional": false
-        },
-        {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
-          "optional": false
-        },
-        {
-          "id": "salt",
-          "quantity": 0.25,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "cilantro",
-          "quantity": 5,
-          "unit": "g",
+          "name": "cheese",
+          "quantity": "1 slice",
           "optional": true
         }
       ],
-      "instructions": [
-        "Prepare 300 g of cooked and drained chickpeas; if using canned chickpeas, wash and drain before weighing. Wash and finely chop 250 g of tomatoes. Peel and mince 80 g of onion, 2 cloves of garlic, and 10 g of ginger.",
-        "Heat 1 tablespoon of cooking oil over medium heat. Stir-fry the onion for 4 minutes, add the garlic and ginger, and stir for 30 seconds.",
-        "Add 1 tablespoon of curry powder, stir for 20 seconds, then add the tomatoes and 0.25 teaspoon of salt. Stir-fry for 5 minutes, gently mashing the tomatoes.",
-        "Add the chickpeas and 200 ml of water, bring to a boil, then reduce the heat to low. Cook for about 12 minutes, stirring occasionally; mash a few chickpeas to thicken the sauce.",
-        "Turn off the heat and divide into two bowls. If using cilantro, wash and mince 5 g, then sprinkle on top."
-      ],
-      "image": "/img/r025.jpg",
-      "cookingTime": 35,
-      "servings": 2
+      "steps": [
+        "Cook 4 bacon rashes in a skillet over medium heat until crisp, 6–8 minutes. Drain on paper. In the same pan, warm sliced cooked chicken 1 minute if it is fridge-cold.",
+        "Toast 3 slices of bread per sandwich until golden. Lettuce leaves should be dry. Slice tomato 5 mm thick and salt lightly so it tastes of something.",
+        "Lay out bread. Spread a thin smear of butter or mayonnaise if you have it (optional) so the bread does not taste dry.",
+        "Build: bread, lettuce, tomato, chicken, bread, bacon, cheese, lettuce, bread. Press gently so layers grip.",
+        "Insert toothpicks in four corners. Cut diagonally into triangles so the cross-section shows the layers.",
+        "Serve immediately while bacon is still crisp. If packing, keep tomato away from bread until eating or the toast turns wet."
+      ]
     },
     {
       "id": "r026",
-      "name": "Palak Paneer",
-      "cuisine": "Indian",
-      "difficulty": "medium",
-      "description": "Paneer cooked in a spinach sauce with onions, ginger, and spices.",
+      "name": "Creamy Potato Soup",
+      "image": "https://lifemadesweeter.com/wp-content/uploads/Easy-Potato-Soup-recipe.jpg",
+      "cookTime": 35,
+      "difficulty": "easy",
+      "cuisine": "french",
+      "servings": 4,
       "ingredients": [
         {
-          "id": "paneer",
-          "quantity": 200,
-          "unit": "g",
+          "name": "potato",
+          "quantity": "4",
           "optional": false
         },
         {
-          "id": "spinach",
-          "quantity": 300,
-          "unit": "g",
+          "name": "onion",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "tomato",
-          "quantity": 150,
-          "unit": "g",
+          "name": "milk",
+          "quantity": "1 cup",
           "optional": false
         },
         {
-          "id": "onion",
-          "quantity": 80,
-          "unit": "g",
+          "name": "butter",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "garlic",
-          "quantity": 2,
-          "unit": "clove",
+          "name": "stock",
+          "quantity": "3 cups",
           "optional": false
         },
         {
-          "id": "ginger",
-          "quantity": 10,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": "milk",
-          "quantity": 50,
-          "unit": "ml",
-          "optional": false
-        },
-        {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
-          "optional": false
-        },
-        {
-          "id": "cumin",
-          "quantity": 0.5,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "turmeric",
-          "quantity": 0.25,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "salt",
-          "quantity": 0.25,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
+          "name": "parsley",
+          "quantity": "2 tbsp",
           "optional": true
         }
       ],
-      "instructions": [
-        "Wash 300 g of spinach thoroughly, blanch in boiling water for 1 minute, then transfer to cold water and drain. Blend the spinach with 50 ml of water into a smooth puree.",
-        "Cut 200 g of paneer into 2 cm cubes. Wash and finely chop 150 g of tomatoes; peel and mince 80 g of onion, 2 cloves of garlic, and 10 g of ginger.",
-        "Heat 1 tablespoon of cooking oil over medium heat. Stir-fry the onion for 4 minutes, add the garlic and ginger, and stir for 30 seconds. Add 0.5 teaspoon of cumin and 0.25 teaspoon of turmeric, and stir for 20 seconds.",
-        "Add the tomatoes and 0.25 teaspoon of salt, cook for about 6 minutes, and gently mash them until soft. Add the spinach puree and 50 ml of milk, stir, and simmer on low heat for 3 minutes.",
-        "Add the paneer, stir gently, and cook for another 5 minutes so the cheese heats evenly and absorbs the sauce. If using pepper, add 0.125 teaspoon; turn off the heat and divide into two bowls."
-      ],
-      "image": "/img/r026.jpg",
-      "cookingTime": 35,
-      "servings": 2
+      "steps": [
+        "Peel and cube 600 g potatoes into 2 cm chunks. Dice 1 onion. Chop parsley.",
+        "Melt 30 g butter in a pot over medium heat. Cook onion 6 minutes until soft and sweet, no colour.",
+        "Add potato and 700 ml stock. Bring to a boil, then simmer 15 minutes until potatoes mash easily against the pot wall.",
+        "Take off the heat. Mash in the pot for a rustic texture, or blend half and return it if you want it silkier. Leave some chunks either way.",
+        "Stir in 200 ml milk. Return to low heat. Do not boil hard after adding milk or it can catch and taste scorched. Heat until steaming.",
+        "Season with salt and white or black pepper. If too thick, add stock; if thin, simmer 2 minutes uncovered.",
+        "Ladle into bowls. Finish with parsley and a small knob of butter if you like shine."
+      ]
     },
     {
       "id": "r027",
-      "name": "Cucumber Raita",
-      "cuisine": "Indian",
+      "name": "Garlic Noodles",
+      "image": "https://cdn.sanity.io/images/f3knbc2s/production/1167531a5c5700ce8341c9b50417919a658f8dd9-2880x1701.jpg?auto=format",
+      "cookTime": 15,
       "difficulty": "easy",
-      "description": "Unsweetened yogurt mixed with cucumber and cumin, served cold.",
+      "cuisine": "vietnamese",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "yogurt",
-          "quantity": 200,
-          "unit": "g",
+          "name": "noodle",
+          "quantity": "250 g",
           "optional": false
         },
         {
-          "id": "cucumber",
-          "quantity": 150,
-          "unit": "g",
+          "name": "garlic",
+          "quantity": "6 cloves",
           "optional": false
         },
         {
-          "id": "cumin",
-          "quantity": 0.25,
-          "unit": "teaspoon",
+          "name": "butter",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 0.125,
-          "unit": "teaspoon",
+          "name": "soy sauce",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "mint",
-          "quantity": 5,
-          "unit": "g",
+          "name": "green onion",
+          "quantity": "2 stalks",
+          "optional": false
+        },
+        {
+          "name": "sesame",
+          "quantity": "1 tsp",
           "optional": true
         }
       ],
-      "instructions": [
-        "Wash 150 g of cucumber, cut it in half lengthwise, and remove the watery seeds, then grate or finely dice. Squeeze gently to remove excess water.",
-        "Stir 200 g of unsweetened yogurt until smooth. Add the cucumber, 0.25 teaspoon of cumin, and 0.125 teaspoon of salt, and mix well.",
-        "If using mint, wash 5 g of leaves, drain, then finely chop and mix it in.",
-        "Divide into two small bowls and serve cold. If not using immediately, cover tightly and store in the refrigerator."
-      ],
-      "image": "/img/r027.jpg",
-      "cookingTime": 10,
-      "servings": 2
+      "steps": [
+        "Boil 300 g noodles in salted water until just tender. Scoop out ½ cup cooking water. Drain.",
+        "Thinly slice 5–6 garlic cloves — more slices brown more evenly than a rough mince. Slice green onion. Toast 1 teaspoon sesame seeds.",
+        "Melt 40 g butter in a wide pan over medium-low. Add garlic and cook 2–3 minutes, stirring, until pale gold and smelling sweet. If it turns dark brown, start over — bitter garlic will ruin the dish.",
+        "Add 2 tablespoons soy sauce and a splash of noodle water. It should bubble into a brown emulsion.",
+        "Add noodles. Toss 1 minute, adding water a spoon at a time until every strand is coated and glossy.",
+        "Taste. The noodles should be savory and garlicky, not salty-dry. Scatter green onion and sesame. Serve immediately."
+      ]
     },
     {
       "id": "r028",
-      "name": "Tamagoyaki Rolled Omelette",
-      "cuisine": "Japanese",
-      "difficulty": "medium",
-      "description": "Eggs fried into thin layers and rolled up, with a mildly sweet and savory flavor.",
+      "name": "Caprese Pasta",
+      "image": "https://www.giallozafferano.com.br/images/89-8936/pasta-caprese_1200x800.jpg",
+      "cookTime": 25,
+      "difficulty": "easy",
+      "cuisine": "italian",
+      "servings": 3,
       "ingredients": [
         {
-          "id": "egg",
-          "quantity": 4,
-          "unit": "piece",
+          "name": "pasta",
+          "quantity": "300 g",
           "optional": false
         },
         {
-          "id": "sugar",
-          "quantity": 2,
-          "unit": "teaspoon",
+          "name": "tomato",
+          "quantity": "3",
           "optional": false
         },
         {
-          "id": "soy_sauce",
-          "quantity": 1,
-          "unit": "teaspoon",
+          "name": "mozzarella",
+          "quantity": "150 g",
           "optional": false
         },
         {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "teaspoon",
+          "name": "basil",
+          "quantity": "1 handful",
           "optional": false
         },
         {
-          "id": "scallion",
-          "quantity": 5,
-          "unit": "g",
-          "optional": true
+          "name": "olive oil",
+          "quantity": "3 tbsp",
+          "optional": false
+        },
+        {
+          "name": "garlic",
+          "quantity": "2 cloves",
+          "optional": false
         }
       ],
-      "instructions": [
-        "Lightly beat 4 eggs with 2 teaspoons of sugar, 1 teaspoon of soy sauce, and 2 tablespoons of water until the sugar dissolves. Avoid beating too much to create foam.",
-        "Heat a small non-stick pan over medium-low heat. Use a total of 1 teaspoon of cooking oil to thinly coat the pan between frying batches.",
-        "Pour in about a quarter of the egg mixture, tilting the pan to form a thin layer. Fry for about 45-60 seconds until the egg layer just sets, use a spatula to roll the egg to one edge.",
-        "Coat the pan with a little more of the prepared oil, pour in another thin layer of egg, and lift the rolled egg so the new egg flows underneath. When the new layer sets, roll it back. Repeat until all the egg mixture is used.",
-        "Lower the heat to low and turn the egg roll for another 1-2 minutes so the middle layers cook completely with no runny egg left. Remove, let it rest for 2 minutes, then cut into slices.",
-        "Divide into two portions. If using scallions, wash, finely chop 5 g, and sprinkle lightly on top."
-      ],
-      "image": "/img/r028.jpg",
-      "cookingTime": 25,
-      "servings": 2
+      "steps": [
+        "Bring a large pot of salted water to a boil. Cook 300 g short pasta until al dente. Reserve ½ cup water, then drain.",
+        "Halve 250 g ripe tomatoes (cherry tomatoes work well). Tear 150 g mozzarella into chunks and drain extra liquid. Tear a handful of basil. Mince 2 garlic cloves.",
+        "Warm 3 tablespoons olive oil over medium-low. Cook garlic 1 minute until fragrant, not brown.",
+        "Add tomatoes and a pinch of salt. Cook 4–5 minutes until they slump and release juice but still hold shape.",
+        "Toss in the pasta. Add a splash of pasta water so the oil and tomato juice form a light sauce.",
+        "Take off the heat. Fold in mozzarella and basil so the cheese softens but does not fully melt into strings. Taste for salt.",
+        "Serve at once. If it sits, mozzarella weeps and the pasta cools — this dish is meant hot-and-fresh."
+      ]
     },
     {
       "id": "r029",
-      "name": "Chicken Teriyaki",
-      "cuisine": "Japanese",
-      "difficulty": "easy",
-      "description": "Pan-fried chicken coated in a mildly thick soy sauce and honey glaze.",
+      "name": "Beef Stir Fry",
+      "image": "https://www.themealdb.com/images/media/meals/m0p0j81765568742.jpg",
+      "cookTime": 20,
+      "difficulty": "medium",
+      "cuisine": "chinese",
+      "servings": 3,
       "ingredients": [
         {
-          "id": "chicken",
-          "quantity": 350,
-          "unit": "g",
+          "name": "beef",
+          "quantity": "350 g",
           "optional": false
         },
         {
-          "id": "soy_sauce",
-          "quantity": 1.5,
-          "unit": "tablespoon",
+          "name": "broccoli",
+          "quantity": "1 head",
           "optional": false
         },
         {
-          "id": "honey",
-          "quantity": 1,
-          "unit": "tablespoon",
+          "name": "garlic",
+          "quantity": "3 cloves",
           "optional": false
         },
         {
-          "id": "garlic",
-          "quantity": 1,
-          "unit": "clove",
+          "name": "ginger",
+          "quantity": "1 tbsp",
           "optional": false
         },
         {
-          "id": "ginger",
-          "quantity": 5,
-          "unit": "g",
+          "name": "soy sauce",
+          "quantity": "3 tbsp",
           "optional": false
         },
         {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "teaspoon",
+          "name": "onion",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "sesame_oil",
-          "quantity": 0.5,
-          "unit": "teaspoon",
-          "optional": true
-        },
-        {
-          "id": "scallion",
-          "quantity": 5,
-          "unit": "g",
+          "name": "sesame oil",
+          "quantity": "1 tsp",
           "optional": true
         }
       ],
-      "instructions": [
-        "Cut 350 g of boneless chicken into 2 cm pieces. Peel and mince 1 clove of garlic and 5 g of ginger.",
-        "Mix 1.5 tablespoons of soy sauce with 1 tablespoon of honey, garlic, ginger, and 80 ml of water to make a sauce.",
-        "Heat 1 teaspoon of cooking oil over medium heat. Add the chicken, pan-fry, and turn evenly for about 6 minutes.",
-        "Pour in the sauce, bring to a gentle boil, then lower the heat. Cover with a lid and cook for another 8-10 minutes until the chicken is fully cooked; increase the time if the chicken pieces are thicker than instructed.",
-        "Open the lid and stir for 2-3 minutes until the sauce thickens and coats the meat evenly. If using sesame oil, add 0.5 teaspoon, then turn off the heat.",
-        "Divide onto two plates. If using scallions, wash, finely chop 5 g, and sprinkle on top."
-      ],
-      "image": "/img/r029.jpg",
-      "cookingTime": 30,
-      "servings": 2
+      "steps": [
+        "Slice 350 g beef thin against the grain (partially frozen meat slices cleaner). Toss with 1 teaspoon soy sauce. Cut broccoli into florets. Slice 1 onion. Mince garlic and ginger.",
+        "Mix sauce: 3 tablespoons soy sauce, 1 teaspoon sesame oil, 1 teaspoon sugar, 2 tablespoons water.",
+        "Heat a wok on high until smoking. Add 1 tablespoon oil. Sear beef 45–60 seconds per side in batches until browned but still pink inside. Remove. Overcrowding steams the meat grey.",
+        "Add broccoli, onion, and 2 tablespoons water. Stir-fry 2–3 minutes until broccoli is bright and onion edges char slightly.",
+        "Add garlic and ginger 15 seconds. Return beef. Pour sauce. Toss 30 seconds until the sauce thickens from the meat juices and coats everything.",
+        "Taste. Serve immediately over rice. Resting in the wok will overcook the beef."
+      ]
     },
     {
       "id": "r030",
-      "name": "Vegetable Miso Soup",
-      "cuisine": "Japanese",
+      "name": "Honey Garlic Salmon",
+      "image": "https://www.recipetineats.com/tachyon/2015/03/Honey-Garlic-Salmon.jpg",
+      "cookTime": 25,
       "difficulty": "easy",
-      "description": "Miso soup with tofu, carrots, and wakame seaweed.",
+      "cuisine": "american",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "tofu",
-          "quantity": 200,
-          "unit": "g",
+          "name": "salmon",
+          "quantity": "2 fillets",
           "optional": false
         },
         {
-          "id": "carrot",
-          "quantity": 100,
-          "unit": "g",
+          "name": "honey",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "seaweed",
-          "quantity": 5,
-          "unit": "g",
+          "name": "garlic",
+          "quantity": "3 cloves",
           "optional": false
         },
         {
-          "id": "miso",
-          "quantity": 2,
-          "unit": "tablespoon",
+          "name": "soy sauce",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "scallion",
-          "quantity": 10,
-          "unit": "g",
+          "name": "lemon",
+          "quantity": "1/2",
+          "optional": false
+        },
+        {
+          "name": "sesame",
+          "quantity": "1 tsp",
           "optional": true
         }
       ],
-      "instructions": [
-        "Soak 5 g of dried wakame seaweed in water for about 5-10 minutes until expanded, drain, and cut into bite-sized pieces. Peel, wash, and thinly slice 100 g of carrots; cut 200 g of tofu into 2 cm cubes.",
-        "Boil 700 ml of water, add the carrots, and cook over medium heat for about 5-6 minutes until soft.",
-        "Add the tofu and seaweed, and gently boil for 3 minutes. Avoid stirring strongly so the tofu doesn't break.",
-        "Scoop a little of the soup broth into a bowl and dissolve 2 tablespoons of miso in it. Lower the heat to very low, pour the dissolved miso back into the pot, and stir gently without boiling strongly.",
-        "If using scallions, wash, finely chop 10 g, and add them in. Turn off the heat and divide the soup into two bowls."
-      ],
-      "image": "/img/r030.jpg",
-      "cookingTime": 20,
-      "servings": 2
+      "steps": [
+        "Pat 2 salmon fillets dry. Season with salt. Mix 2 tablespoons honey, 2 tablespoons soy sauce, 2 minced garlic cloves, and 1 tablespoon lemon juice.",
+        "Heat 1 teaspoon oil in an oven-safe pan over medium-high. Sear salmon 3 minutes skin-side down (or presentation side) until a crust forms. Flip.",
+        "Pour the honey-soy mix around, not only on, the fish. It should bubble. Spoon glaze over the top.",
+        "Lower heat to medium. Cook 3–5 minutes more until the salmon flakes and the glaze is sticky, not burnt. If the sugar darkens too fast, add 1 tablespoon water and lower the heat.",
+        "Squeeze a little extra lemon over the pan. Scatter sesame seeds.",
+        "Rest 2 minutes. Serve with rice or greens. The glaze should shine and taste sweet-salty, not bitter."
+      ]
     },
     {
       "id": "r031",
-      "name": "Beef Bibimbap",
-      "cuisine": "Korean",
+      "name": "Lamb Tagine",
+      "image": "https://www.themealdb.com/images/media/meals/yuwtuu1511295751.jpg",
+      "cookTime": 45,
       "difficulty": "medium",
-      "description": "Mixed rice with beef, cooked vegetables, egg, and gochujang sauce.",
+      "cuisine": "mediterranean",
+      "servings": 4,
       "ingredients": [
         {
-          "id": "cooked_rice",
-          "quantity": 400,
-          "unit": "g",
+          "name": "lamb",
+          "quantity": "500 g",
           "optional": false
         },
         {
-          "id": "beef",
-          "quantity": 200,
-          "unit": "g",
+          "name": "onion",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "egg",
-          "quantity": 2,
-          "unit": "piece",
+          "name": "garlic",
+          "quantity": "3 cloves",
           "optional": false
         },
         {
-          "id": "carrot",
-          "quantity": 100,
-          "unit": "g",
+          "name": "chickpea",
+          "quantity": "1 can",
           "optional": false
         },
         {
-          "id": "spinach",
-          "quantity": 150,
-          "unit": "g",
+          "name": "cumin",
+          "quantity": "1 tsp",
           "optional": false
         },
         {
-          "id": "bean_sprouts",
-          "quantity": 100,
-          "unit": "g",
+          "name": "tomato",
+          "quantity": "2",
           "optional": false
         },
         {
-          "id": "garlic",
-          "quantity": 2,
-          "unit": "clove",
-          "optional": false
-        },
-        {
-          "id": "soy_sauce",
-          "quantity": 2,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "sesame_oil",
-          "quantity": 2,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "gochujang",
-          "quantity": 1,
-          "unit": "tablespoon",
-          "optional": false
-        },
-        {
-          "id": "sugar",
-          "quantity": 1,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
-          "optional": false
-        },
-        {
-          "id": "salt",
-          "quantity": 0.25,
-          "unit": "teaspoon",
-          "optional": false
+          "name": "cilantro",
+          "quantity": "1 handful",
+          "optional": true
         }
       ],
-      "instructions": [
-        "Slice 200 g of beef across the grain into slices of about 2 mm. Peel and mince 2 cloves of garlic, then mix with the beef and 2 teaspoons of soy sauce, and marinate for 10 minutes. Prepare 400 g of cooked rice.",
-        "Peel and julienne 100 g of carrots. Wash thoroughly 150 g of spinach and 100 g of bean sprouts. Blanch the spinach in boiling water for 1-2 minutes, remove; add the bean sprouts and cook for 3 minutes, then drain. Toss both portions of vegetables with a total of 1 teaspoon of sesame oil and 0.25 teaspoon of salt, keeping each type separate.",
-        "Divide 1 tablespoon of cooking oil into 3 parts, each part being 1 teaspoon. Use the first part to stir-fry the carrots for about 3 minutes with 1 tablespoon of water, then remove. Use the second part to stir-fry the beef for 5-6 minutes until fully cooked, separating the meat slices.",
-        "Use the last part of the cooking oil to fry 2 eggs over medium-low heat, cover with a lid for about 4-5 minutes, and continue cooking until both the egg whites and yolks are set.",
-        "Mix 1 tablespoon of gochujang with 1 teaspoon of sugar, the remaining 1 teaspoon of sesame oil, and 1 tablespoon of water. Warm up the rice in a covered pot with 2 tablespoons of water, stirring until the rice is heated evenly.",
-        "Divide the rice into two bowls, and arrange the beef, carrots, spinach, and bean sprouts into individual sections on top. Place an egg on top, divide the sauce into the two bowls, and mix when eating."
-      ],
-      "image": "/img/r031.jpg",
-      "cookingTime": 45,
-      "servings": 2
+      "steps": [
+        "Cut 500 g lamb into 3 cm cubes. Pat dry and season with salt. Dice 1 onion. Mince 3 garlic cloves. Chop 2 tomatoes. Drain 1 can of chickpeas.",
+        "Heat 1 tablespoon oil in a heavy pot over medium-high. Brown lamb in batches 2–3 minutes per side. Crowding makes it grey. Set aside.",
+        "Lower heat to medium. Cook onion in the lamb fat 5 minutes until soft. Add garlic and 1 teaspoon cumin. Stir 30 seconds until the cumin smells toasty.",
+        "Return lamb and any juices. Add tomato and 200 ml water. Scrape browned bits off the bottom — that is flavour.",
+        "Cover and simmer gently 35–40 minutes until lamb is tender when pierced. Add a splash of water if it dries out.",
+        "Stir in chickpeas and simmer uncovered 5 minutes so they take on the sauce. Taste for salt and cumin.",
+        "Rest 5 minutes. Scatter cilantro. Serve with bread or couscous. The sauce should be spoonable, not watery."
+      ]
     },
     {
       "id": "r032",
-      "name": "Kimchi Fried Rice",
-      "cuisine": "Korean",
+      "name": "Garlic Thyme Lentils",
+      "image": "https://www.themealdb.com/images/media/meals/vwwspt1487394060.jpg",
+      "cookTime": 35,
       "difficulty": "easy",
-      "description": "Fried rice with kimchi, served with a fried egg and optional scallions.",
+      "cuisine": "french",
+      "servings": 3,
       "ingredients": [
         {
-          "id": "cooked_rice",
-          "quantity": 400,
-          "unit": "g",
+          "name": "lentil",
+          "quantity": "1 cup",
           "optional": false
         },
         {
-          "id": "kimchi",
-          "quantity": 150,
-          "unit": "g",
+          "name": "garlic",
+          "quantity": "3 cloves",
           "optional": false
         },
         {
-          "id": "egg",
-          "quantity": 2,
-          "unit": "piece",
+          "name": "thyme",
+          "quantity": "4 sprigs",
           "optional": false
         },
         {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
+          "name": "onion",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "soy_sauce",
-          "quantity": 1,
-          "unit": "teaspoon",
+          "name": "olive oil",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "sesame_oil",
-          "quantity": 0.5,
-          "unit": "teaspoon",
-          "optional": true
+          "name": "stock",
+          "quantity": "3 cups",
+          "optional": false
         },
         {
-          "id": "scallion",
-          "quantity": 10,
-          "unit": "g",
+          "name": "parsley",
+          "quantity": "2 tbsp",
           "optional": true
         }
       ],
-      "instructions": [
-        "Prepare 400 g of cooked rice, separating it gently so it is loose. Finely chop 150 g of kimchi and reserve the accompanying liquid from this amount of kimchi.",
-        "Use 1 teaspoon of the total 1 tablespoon of cooking oil to fry 2 eggs over medium-low heat. Cover with a lid and cook for 4-5 minutes, continuing until both the egg whites and yolks are set; remove the eggs.",
-        "Add the remaining 2 teaspoons of cooking oil to the pan. Stir-fry the kimchi for about 3 minutes, add the rice, the reserved kimchi liquid, and 1 teaspoon of soy sauce.",
-        "Stir continuously for about 5-7 minutes until the rice is heated evenly and well mixed with the kimchi. If using sesame oil, add 0.5 teaspoon; if using scallions, wash, finely chop 10 g, and add them in.",
-        "Stir for another 30 seconds, then turn off the heat. Divide the rice onto two plates and place a fried egg on each portion."
-      ],
-      "image": "/img/r032.jpg",
-      "cookingTime": 25,
-      "servings": 2
+      "steps": [
+        "Rinse 1 cup lentils until water runs clear. Pick out any stones. Dice 1 onion. Mince 3 garlic cloves. Have 4 thyme sprigs and 3 cups stock ready.",
+        "Heat 2 tablespoons olive oil over medium. Cook onion 6 minutes until translucent. Add garlic 30 seconds.",
+        "Add lentils, thyme, and stock. Bring to a boil, then simmer uncovered 20–25 minutes until lentils are tender but still hold their shape. Add water if the pot looks dry before they are done.",
+        "Fish out thyme stems. The leaves can stay. Season with salt only at the end — salt too early can keep some lentils firm.",
+        "If you want it brothier, add a splash of stock; for a stew, simmer 3 minutes more to thicken.",
+        "Taste. The lentils should taste of garlic and thyme, not only water. Finish with chopped parsley and a drizzle of olive oil."
+      ]
     },
     {
       "id": "r033",
-      "name": "Thai Basil Chicken Stir-Fry",
-      "cuisine": "Thai",
-      "difficulty": "medium",
-      "description": "Coarsely ground chicken quickly stir-fried with basil, garlic, and a sweet and savory sauce.",
+      "name": "Chickpea Fajitas",
+      "image": "https://www.themealdb.com/images/media/meals/tvtxpq1511464705.jpg",
+      "cookTime": 25,
+      "difficulty": "easy",
+      "cuisine": "mexican",
+      "servings": 3,
       "ingredients": [
         {
-          "id": "chicken",
-          "quantity": 300,
-          "unit": "g",
+          "name": "chickpea",
+          "quantity": "1 can",
           "optional": false
         },
         {
-          "id": "basil",
-          "quantity": 20,
-          "unit": "g",
+          "name": "bell pepper",
+          "quantity": "2",
           "optional": false
         },
         {
-          "id": "garlic",
-          "quantity": 3,
-          "unit": "clove",
+          "name": "onion",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "soy_sauce",
-          "quantity": 2,
-          "unit": "teaspoon",
+          "name": "tortilla",
+          "quantity": "6",
           "optional": false
         },
         {
-          "id": "fish_sauce",
-          "quantity": 1,
-          "unit": "teaspoon",
+          "name": "cumin",
+          "quantity": "1 tsp",
           "optional": false
         },
         {
-          "id": "sugar",
-          "quantity": 0.5,
-          "unit": "teaspoon",
-          "optional": false
+          "name": "chili",
+          "quantity": "1",
+          "optional": true
         },
         {
-          "id": "cooking_oil",
-          "quantity": 1,
-          "unit": "tablespoon",
-          "optional": false
-        },
-        {
-          "id": "chili",
-          "quantity": 1,
-          "unit": "piece",
+          "name": "lime",
+          "quantity": "1",
           "optional": true
         }
       ],
-      "instructions": [
-        "Finely chop or coarsely grind 300 g of boneless chicken into pieces of about 5 mm. Wash and drain 20 g of basil leaves. Peel and mince 3 cloves of garlic; if using chili, remove the stem and finely chop 1 piece.",
-        "Mix 2 teaspoons of soy sauce, 1 teaspoon of fish sauce, 0.5 teaspoon of sugar, and 3 tablespoons of water to make a sauce.",
-        "Heat 1 tablespoon of cooking oil in a pan over medium-high heat. Sauté the garlic and chili (if using) for about 20 seconds, add the chicken, and stir for 5 minutes, breaking the pieces apart so they don't clump.",
-        "Add the sauce, lower the heat to medium, and cook for another 5-6 minutes until the chicken is fully cooked. Add a little water if the sauce dries out before the meat is cooked.",
-        "Add the basil, increase the heat, and stir for about 30-60 seconds until the leaves are just softened and the sauce coats the meat. Turn off the heat and divide into two portions."
-      ],
-      "image": "/img/r033.jpg",
-      "cookingTime": 25,
-      "servings": 2
+      "steps": [
+        "Drain and rinse 1 can of chickpeas. Pat them very dry. Toss with 1 teaspoon cumin, salt, and a little oil.",
+        "Slice 2 bell peppers and 1 onion into 1 cm strips. Warm 6 tortillas and wrap them.",
+        "Heat a large skillet over high heat. Add 1 tablespoon oil. Cook onion and pepper 5–7 minutes without stirring too often so they blister and sweeten.",
+        "Push vegetables aside. Add chickpeas. Cook 3–4 minutes, shaking the pan, until some chickpeas split and brown.",
+        "Toss everything together. Taste. Add minced chili if you want heat and a squeeze of lime for acidity.",
+        "Pile into tortillas. The filling should be hot and slightly charred, not steamed. Serve extra lime on the side."
+      ]
     },
     {
       "id": "r034",
-      "name": "Cucumber Peanut Salad",
-      "cuisine": "Thai",
+      "name": "Split Pea Soup",
+      "image": "https://www.themealdb.com/images/media/meals/xxtsvx1511814083.jpg",
+      "cookTime": 45,
       "difficulty": "easy",
-      "description": "Crispy cucumber mixed in a sweet and sour sauce with roasted peanuts.",
+      "cuisine": "american",
+      "servings": 4,
       "ingredients": [
         {
-          "id": "cucumber",
-          "quantity": 300,
-          "unit": "g",
+          "name": "peas",
+          "quantity": "1.5 cups dried split",
           "optional": false
         },
         {
-          "id": "red_onion",
-          "quantity": 50,
-          "unit": "g",
+          "name": "carrot",
+          "quantity": "2",
           "optional": false
         },
         {
-          "id": "peanuts",
-          "quantity": 30,
-          "unit": "g",
+          "name": "onion",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "lime",
-          "quantity": 0.5,
-          "unit": "piece",
+          "name": "stock",
+          "quantity": "5 cups",
           "optional": false
         },
         {
-          "id": "rice_vinegar",
-          "quantity": 1,
-          "unit": "teaspoon",
+          "name": "leek",
+          "quantity": "1",
           "optional": false
         },
         {
-          "id": "soy_sauce",
-          "quantity": 1,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "sugar",
-          "quantity": 1,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "cilantro",
-          "quantity": 5,
-          "unit": "g",
-          "optional": true
-        },
-        {
-          "id": "chili",
-          "quantity": 0.5,
-          "unit": "piece",
+          "name": "thyme",
+          "quantity": "2 sprigs",
           "optional": true
         }
       ],
-      "instructions": [
-        "Add 30 g of peanuts to a dry pan, roast on low heat for 7-10 minutes, and stir frequently until cooked and fragrant. Let it cool slightly, rub off the skins, then roughly crush them.",
-        "Wash 300 g of cucumber, cut it in half lengthwise, and slice. Peel and thinly slice 50 g of red onion. If using cilantro, wash and finely chop 5 g; if using chili, wash, remove the stem, and finely chop 0.5 piece.",
-        "Squeeze 0.5 piece of lime and discard the seeds. Stir the lime juice with 1 teaspoon of rice vinegar, 1 teaspoon of soy sauce, and 1 teaspoon of sugar until dissolved.",
-        "Toss the cucumber and onion with the sauce, adding the cilantro or chili if using. Let it marinate for 5 minutes.",
-        "Right before eating, mix in the peanuts and divide into two portions so the peanuts stay crunchy."
-      ],
-      "image": "/img/r034.jpg",
-      "cookingTime": 20,
-      "servings": 2
+      "steps": [
+        "Rinse 1½ cups dried split peas. Dice 1 onion, 1 leek (white and light green only, washed well of grit), and 2 carrots.",
+        "Melt a little oil or butter in a pot over medium. Cook onion, leek, and carrot 8 minutes until soft and smelling sweet.",
+        "Add split peas, 5 cups stock, and 2 thyme sprigs. Bring to a boil, then simmer partly covered 35–40 minutes, stirring every 10 minutes so peas do not catch on the bottom.",
+        "When peas collapse and the soup looks thick and porridge-like, remove thyme. Mash some of the soup against the pot, or blend half.",
+        "Season with salt and pepper. Split peas need more salt than you think once they thicken. Loosen with stock if it sets too stiff.",
+        "Serve hot. The soup will thicken more as it cools; keep extra stock for leftovers."
+      ]
     },
     {
       "id": "r035",
-      "name": "French Omelette",
-      "cuisine": "French",
-      "difficulty": "easy",
-      "description": "Soft folded fried egg with butter, a pale yellow surface, and no filling.",
+      "name": "Falafel Pita",
+      "image": "https://www.themealdb.com/images/media/meals/ae6clc1760524712.jpg",
+      "cookTime": 30,
+      "difficulty": "medium",
+      "cuisine": "mediterranean",
+      "servings": 3,
       "ingredients": [
         {
-          "id": "egg",
-          "quantity": 4,
-          "unit": "piece",
+          "name": "chickpea",
+          "quantity": "1 can",
           "optional": false
         },
         {
-          "id": "butter",
-          "quantity": 20,
-          "unit": "g",
+          "name": "garlic",
+          "quantity": "2 cloves",
           "optional": false
         },
         {
-          "id": "salt",
-          "quantity": 0.25,
-          "unit": "teaspoon",
+          "name": "cumin",
+          "quantity": "1 tsp",
           "optional": false
         },
         {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
-          "optional": true
+          "name": "parsley",
+          "quantity": "1 handful",
+          "optional": false
         },
         {
-          "id": "parsley",
-          "quantity": 5,
-          "unit": "g",
+          "name": "bread",
+          "quantity": "3 pitas",
+          "optional": false
+        },
+        {
+          "name": "lettuce",
+          "quantity": "1 cup",
+          "optional": false
+        },
+        {
+          "name": "yogurt",
+          "quantity": "1/2 cup",
           "optional": true
         }
       ],
-      "instructions": [
-        "Crack 4 eggs into a bowl, add 0.25 teaspoon of salt, and beat evenly. If using pepper, add 0.125 teaspoon. Divide the mixture into two portions.",
-        "Melt 10 g of butter in a small non-stick pan over medium-low heat. Pour in one portion of the egg, use a spatula to gently stir the middle for about 1 minute to create small egg curds.",
-        "Spread the egg into an even layer and lower the heat to low. Cook for another 1-2 minutes until the surface just sets, then fold both edges into the middle to form a long roll.",
-        "Gently roll the egg so the folded edge is on the bottom, cook for another 30-60 seconds until the egg is fully cooked with no runny egg left. Keep the heat low so the outside is pale yellow.",
-        "Repeat with 10 g of butter and the remaining egg portion. If using parsley, wash, finely chop 5 g, and sprinkle over the two egg portions."
-      ],
-      "image": "/img/r035.jpg",
-      "cookingTime": 20,
-      "servings": 2
+      "steps": [
+        "Drain 1 can of chickpeas very well and pat dry. Roughly chop a handful of parsley. Mince 2 garlic cloves.",
+        "Pulse chickpeas, garlic, 1 teaspoon cumin, parsley, salt, and 1 tablespoon flour or a spoon of the chickpea liquid in a processor until coarse, like wet sand. Do not puree to hummus or the patties will be pasty.",
+        "Chill the mix 10 minutes. With wet hands, shape 8 small patties 1.5 cm thick. If they crack, the mix is too dry — add a teaspoon of water.",
+        "Heat 3 mm oil in a skillet over medium. Fry patties 3–4 minutes per side until deep brown and crisp. Drain on paper.",
+        "Warm 3 pitas. Shred lettuce. Stir yogurt with a pinch of salt if using.",
+        "Open each pita, add lettuce, 2–3 falafel, and yogurt. Eat while the crust is still crunchy. Reheating in a microwave will soften them — use a pan instead."
+      ]
     },
     {
       "id": "r036",
-      "name": "Chicken and Mushroom Crepes",
-      "cuisine": "French",
-      "difficulty": "hard",
-      "description": "Thin savory crepes rolled with a chicken and mushroom filling in a creamy sauce.",
+      "name": "Cauliflower Stir Fry",
+      "image": "https://omnivorescookbook.com/wp-content/uploads/2019/07/1404_Chinese-Cauliflower-Stir-Fry_003.jpg",
+      "cookTime": 20,
+      "difficulty": "easy",
+      "cuisine": "chinese",
+      "servings": 2,
       "ingredients": [
         {
-          "id": "flour",
-          "quantity": 105,
-          "unit": "g",
+          "name": "cauliflower",
+          "quantity": "1 small head",
           "optional": false
         },
         {
-          "id": "egg",
-          "quantity": 1,
-          "unit": "piece",
+          "name": "garlic",
+          "quantity": "3 cloves",
           "optional": false
         },
         {
-          "id": "milk",
-          "quantity": 400,
-          "unit": "ml",
+          "name": "ginger",
+          "quantity": "1 tbsp",
           "optional": false
         },
         {
-          "id": "butter",
-          "quantity": 35,
-          "unit": "g",
+          "name": "soy sauce",
+          "quantity": "2 tbsp",
           "optional": false
         },
         {
-          "id": "chicken",
-          "quantity": 200,
-          "unit": "g",
+          "name": "green bean",
+          "quantity": "1 cup",
           "optional": false
         },
         {
-          "id": "button_mushroom",
-          "quantity": 150,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": "onion",
-          "quantity": 50,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": "garlic",
-          "quantity": 1,
-          "unit": "clove",
-          "optional": false
-        },
-        {
-          "id": "salt",
-          "quantity": 0.375,
-          "unit": "teaspoon",
-          "optional": false
-        },
-        {
-          "id": "pepper",
-          "quantity": 0.125,
-          "unit": "teaspoon",
+          "name": "chili",
+          "quantity": "1",
           "optional": true
         },
         {
-          "id": "parsley",
-          "quantity": 5,
-          "unit": "g",
+          "name": "sesame oil",
+          "quantity": "1 tsp",
           "optional": true
         }
       ],
-      "instructions": [
-        "Separate 105 g of flour into 90 g for the crepe batter and 15 g for the sauce. Separate 400 ml of milk into two 200 ml portions. Melt 10 g of the total 35 g of butter and let it cool slightly. Beat 1 egg with 200 ml of milk, 90 g of flour, the just-melted butter, and 0.125 teaspoon of salt; stir until smooth, then let the batter rest for 20 minutes.",
-        "While the batter is resting, cut 200 g of boneless chicken into 1 cm pieces. Wipe or quickly wash 150 g of button mushrooms, let them drain, and slice. Peel and mince 50 g of onion and 1 clove of garlic.",
-        "Melt 15 g of butter in a pan over medium heat. Stir-fry the onion for 3 minutes, add the garlic, and stir for 20 seconds. Add the chicken and stir-fry for 6 minutes, then add the mushrooms and stir-fry for another 5 minutes, stirring evenly so the mushrooms reduce their moisture and the chicken is fully cooked.",
-        "Sprinkle the 15 g of flour for the sauce into the filling and stir for 1 minute. Slowly pour in the remaining 200 ml of milk, stirring constantly so it doesn't clump. Add the remaining 0.25 teaspoon of salt and cook on low heat for 4-5 minutes until the sauce thickens. If using pepper, add 0.125 teaspoon; keep the filling warm on very low heat.",
-        "Use the remaining 10 g of butter to thinly coat a non-stick pan between frying batches. Stir the batter again and divide into 4 parts. Pour each part into the pan and quickly swirl it into a thin layer, frying on medium-low heat for about 1-2 minutes on the first side and 30-60 seconds on the second side until the crepe is cooked.",
-        "Divide the hot filling onto the 4 crepes, fold in the sides, and then fold or roll them up. Place the folded edge down in the pan and warm each crepe for about 1 minute so the filling heats evenly.",
-        "Serve 2 crepes per portion. If using parsley, wash, mince 5 g, and sprinkle on top before eating."
-      ],
-      "image": "/img/r036.jpg",
-      "cookingTime": 65,
-      "servings": 2
-    }
-  ],
-  "ingredients": [
-    {
-      "id": "egg",
-      "name": "Egg",
-      "category": "Proteins",
-      "aliases": [
-        "eggs"
-      ]
-    },
-    {
-      "id": "chicken",
-      "name": "Chicken",
-      "category": "Proteins",
-      "aliases": [
-        "chicken meat"
-      ]
-    },
-    {
-      "id": "pork",
-      "name": "Pork",
-      "category": "Proteins",
-      "aliases": [
-        "pork meat"
-      ]
-    },
-    {
-      "id": "ground_pork",
-      "name": "Ground pork",
-      "category": "Proteins",
-      "aliases": [
-        "ground pork",
-        "minced pork"
-      ]
-    },
-    {
-      "id": "beef",
-      "name": "Beef",
-      "category": "Proteins",
-      "aliases": [
-        "beef meat"
-      ]
-    },
-    {
-      "id": "ground_beef",
-      "name": "Ground beef",
-      "category": "Proteins",
-      "aliases": [
-        "ground beef",
-        "minced beef"
-      ]
-    },
-    {
-      "id": "shrimp",
-      "name": "Shrimp",
-      "category": "Proteins",
-      "aliases": [
-        "shrimps",
-        "prawns"
-      ]
-    },
-    {
-      "id": "white_fish",
-      "name": "White fish fillet",
-      "category": "Proteins",
-      "aliases": [
-        "white fish fillet"
-      ]
-    },
-    {
-      "id": "salmon",
-      "name": "Salmon",
-      "category": "Proteins",
-      "aliases": [
-        "salmon fillet"
-      ]
-    },
-    {
-      "id": "canned_tuna",
-      "name": "Canned tuna",
-      "category": "Proteins",
-      "aliases": [
-        "canned tuna",
-        "tinned tuna"
-      ]
-    },
-    {
-      "id": "tofu",
-      "name": "Tofu",
-      "category": "Proteins",
-      "aliases": [
-        "bean curd"
-      ]
-    },
-    {
-      "id": "chickpeas",
-      "name": "Cooked or canned chickpeas",
-      "category": "Proteins",
-      "aliases": [
-        "cooked chickpeas",
-        "canned chickpeas"
-      ]
-    },
-    {
-      "id": "red_lentils",
-      "name": "Dry red lentils",
-      "category": "Proteins",
-      "aliases": [
-        "dry red lentils",
-        "dried red lentils"
-      ]
-    },
-    {
-      "id": "black_beans",
-      "name": "Cooked or canned black beans",
-      "category": "Proteins",
-      "aliases": [
-        "cooked black beans",
-        "canned black beans"
-      ]
-    },
-    {
-      "id": "tomato",
-      "name": "Tomato",
-      "category": "Vegetables",
-      "aliases": [
-        "tomatoes"
-      ]
-    },
-    {
-      "id": "onion",
-      "name": "Onion",
-      "category": "Vegetables",
-      "aliases": [
-        "onions"
-      ]
-    },
-    {
-      "id": "red_onion",
-      "name": "Red onion",
-      "category": "Vegetables",
-      "aliases": [
-        "red onion"
-      ]
-    },
-    {
-      "id": "garlic",
-      "name": "Garlic",
-      "category": "Vegetables",
-      "aliases": [
-        "garlic cloves"
-      ]
-    },
-    {
-      "id": "scallion",
-      "name": "Scallion",
-      "category": "Vegetables",
-      "aliases": [
-        "scallions",
-        "spring onion",
-        "green onion"
-      ]
-    },
-    {
-      "id": "carrot",
-      "name": "Carrot",
-      "category": "Vegetables",
-      "aliases": [
-        "carrots"
-      ]
-    },
-    {
-      "id": "potato",
-      "name": "Potato",
-      "category": "Vegetables",
-      "aliases": [
-        "potatoes"
-      ]
-    },
-    {
-      "id": "sweet_potato",
-      "name": "Sweet potato",
-      "category": "Vegetables",
-      "aliases": [
-        "sweet potato"
-      ]
-    },
-    {
-      "id": "broccoli",
-      "name": "Broccoli",
-      "category": "Vegetables",
-      "aliases": [
-        "broccoli florets"
-      ]
-    },
-    {
-      "id": "cabbage",
-      "name": "Cabbage",
-      "category": "Vegetables",
-      "aliases": [
-        "cabbages"
-      ]
-    },
-    {
-      "id": "bok_choy",
-      "name": "Bok choy",
-      "category": "Vegetables",
-      "aliases": [
-        "bok choy",
-        "pak choi"
-      ]
-    },
-    {
-      "id": "spinach",
-      "name": "Spinach",
-      "category": "Vegetables",
-      "aliases": [
-        "spinach leaves"
-      ]
-    },
-    {
-      "id": "lettuce",
-      "name": "Lettuce",
-      "category": "Vegetables",
-      "aliases": [
-        "lettuce leaves"
-      ]
-    },
-    {
-      "id": "cucumber",
-      "name": "Cucumber",
-      "category": "Vegetables",
-      "aliases": [
-        "cucumbers"
-      ]
-    },
-    {
-      "id": "bell_pepper",
-      "name": "Bell pepper",
-      "category": "Vegetables",
-      "aliases": [
-        "bell pepper",
-        "capsicum"
-      ]
-    },
-    {
-      "id": "zucchini",
-      "name": "Zucchini",
-      "category": "Vegetables",
-      "aliases": [
-        "courgette"
-      ]
-    },
-    {
-      "id": "eggplant",
-      "name": "Eggplant",
-      "category": "Vegetables",
-      "aliases": [
-        "aubergine"
-      ]
-    },
-    {
-      "id": "button_mushroom",
-      "name": "Button mushroom",
-      "category": "Vegetables",
-      "aliases": [
-        "button mushroom",
-        "white button mushrooms"
-      ]
-    },
-    {
-      "id": "oyster_mushroom",
-      "name": "Oyster mushroom",
-      "category": "Vegetables",
-      "aliases": [
-        "oyster mushroom"
-      ]
-    },
-    {
-      "id": "corn",
-      "name": "Sweet corn",
-      "category": "Vegetables",
-      "aliases": [
-        "sweetcorn",
-        "sweet corn"
-      ]
-    },
-    {
-      "id": "green_peas",
-      "name": "Green peas",
-      "category": "Vegetables",
-      "aliases": [
-        "green peas"
-      ]
-    },
-    {
-      "id": "pumpkin",
-      "name": "Pumpkin",
-      "category": "Vegetables",
-      "aliases": [
-        "pumpkins"
-      ]
-    },
-    {
-      "id": "seaweed",
-      "name": "Dried wakame seaweed",
-      "category": "Vegetables",
-      "aliases": [
-        "dried wakame",
-        "wakame seaweed"
-      ]
-    },
-    {
-      "id": "celery",
-      "name": "Celery",
-      "category": "Vegetables",
-      "aliases": [
-        "celery stalks"
-      ]
-    },
-    {
-      "id": "bean_sprouts",
-      "name": "Bean sprouts",
-      "category": "Vegetables",
-      "aliases": [
-        "bean sprouts",
-        "mung bean sprouts"
-      ]
-    },
-    {
-      "id": "radish",
-      "name": "White radish",
-      "category": "Vegetables",
-      "aliases": [
-        "white radish",
-        "daikon"
-      ]
-    },
-    {
-      "id": "basil",
-      "name": "Basil",
-      "category": "Herbs",
-      "aliases": [
-        "basil leaves"
-      ]
-    },
-    {
-      "id": "cilantro",
-      "name": "Cilantro",
-      "category": "Herbs",
-      "aliases": [
-        "coriander leaves",
-        "fresh cilantro"
-      ]
-    },
-    {
-      "id": "parsley",
-      "name": "Parsley",
-      "category": "Herbs",
-      "aliases": [
-        "parsley leaves"
-      ]
-    },
-    {
-      "id": "oregano",
-      "name": "Oregano",
-      "category": "Herbs",
-      "aliases": [
-        "oregano leaves"
-      ]
-    },
-    {
-      "id": "mint",
-      "name": "Mint",
-      "category": "Herbs",
-      "aliases": [
-        "mint leaves"
-      ]
-    },
-    {
-      "id": "rosemary",
-      "name": "Rosemary",
-      "category": "Herbs",
-      "aliases": [
-        "rosemary leaves"
-      ]
-    },
-    {
-      "id": "thyme",
-      "name": "Thyme",
-      "category": "Herbs",
-      "aliases": [
-        "thyme leaves"
-      ]
-    },
-    {
-      "id": "lemongrass",
-      "name": "Lemongrass",
-      "category": "Herbs",
-      "aliases": [
-        "lemongrass stalks"
-      ]
-    },
-    {
-      "id": "ginger",
-      "name": "Ginger",
-      "category": "Herbs",
-      "aliases": [
-        "ginger root"
-      ]
-    },
-    {
-      "id": "chili",
-      "name": "Fresh chili",
-      "category": "Herbs",
-      "aliases": [
-        "fresh chili",
-        "fresh chilli"
-      ]
-    },
-    {
-      "id": "milk",
-      "name": "Unsweetened milk",
-      "category": "Dairy",
-      "aliases": [
-        "unsweetened milk",
-        "plain milk"
-      ]
-    },
-    {
-      "id": "butter",
-      "name": "Butter",
-      "category": "Dairy",
-      "aliases": [
-        "dairy butter"
-      ]
-    },
-    {
-      "id": "cheddar",
-      "name": "Cheddar cheese",
-      "category": "Dairy",
-      "aliases": [
-        "cheddar cheese"
-      ]
-    },
-    {
-      "id": "mozzarella",
-      "name": "Mozzarella cheese",
-      "category": "Dairy",
-      "aliases": [
-        "mozzarella cheese"
-      ]
-    },
-    {
-      "id": "parmesan",
-      "name": "Parmesan cheese",
-      "category": "Dairy",
-      "aliases": [
-        "parmesan cheese"
-      ]
-    },
-    {
-      "id": "yogurt",
-      "name": "Unsweetened yogurt",
-      "category": "Dairy",
-      "aliases": [
-        "unsweetened yogurt",
-        "plain yogurt",
-        "plain yoghurt"
-      ]
-    },
-    {
-      "id": "feta",
-      "name": "Feta cheese",
-      "category": "Dairy",
-      "aliases": [
-        "feta cheese"
-      ]
-    },
-    {
-      "id": "paneer",
-      "name": "Paneer cheese",
-      "category": "Dairy",
-      "aliases": [
-        "paneer cheese"
-      ]
-    },
-    {
-      "id": "rice",
-      "name": "Uncooked white rice",
-      "category": "Grains",
-      "aliases": [
-        "uncooked white rice",
-        "dry white rice"
-      ]
-    },
-    {
-      "id": "cooked_rice",
-      "name": "Cooked white rice",
-      "category": "Grains",
-      "aliases": [
-        "cooked rice",
-        "cooked white rice"
-      ]
-    },
-    {
-      "id": "spaghetti",
-      "name": "Dry spaghetti",
-      "category": "Grains",
-      "aliases": [
-        "dry spaghetti",
-        "dried spaghetti"
-      ]
-    },
-    {
-      "id": "burger_bun",
-      "name": "Burger bun",
-      "category": "Grains",
-      "aliases": [
-        "burger bun",
-        "hamburger bun"
-      ]
-    },
-    {
-      "id": "bread",
-      "name": "Sandwich bread",
-      "category": "Grains",
-      "aliases": [
-        "sandwich bread",
-        "sliced bread"
-      ]
-    },
-    {
-      "id": "tortilla",
-      "name": "Tortilla",
-      "category": "Grains",
-      "aliases": [
-        "tortilla wrap",
-        "tortillas"
-      ]
-    },
-    {
-      "id": "flour",
-      "name": "Wheat flour",
-      "category": "Grains",
-      "aliases": [
-        "wheat flour",
-        "all-purpose flour"
-      ]
-    },
-    {
-      "id": "arborio_rice",
-      "name": "Uncooked Arborio rice",
-      "category": "Grains",
-      "aliases": [
-        "arborio rice",
-        "uncooked arborio rice"
-      ]
-    },
-    {
-      "id": "oats",
-      "name": "Rolled oats",
-      "category": "Grains",
-      "aliases": [
-        "rolled oats"
-      ]
-    },
-    {
-      "id": "rice_noodles",
-      "name": "Dried rice noodles",
-      "category": "Grains",
-      "aliases": [
-        "dried rice noodles"
-      ]
-    },
-    {
-      "id": "soy_sauce",
-      "name": "Soy sauce",
-      "category": "Sauces",
-      "aliases": [
-        "soy sauce"
-      ]
-    },
-    {
-      "id": "fish_sauce",
-      "name": "Fish sauce",
-      "category": "Sauces",
-      "aliases": [
-        "fish sauce"
-      ]
-    },
-    {
-      "id": "oyster_sauce",
-      "name": "Oyster sauce",
-      "category": "Sauces",
-      "aliases": [
-        "oyster sauce"
-      ]
-    },
-    {
-      "id": "tahini",
-      "name": "Tahini paste",
-      "category": "Sauces",
-      "aliases": [
-        "sesame paste",
-        "tahini paste"
-      ]
-    },
-    {
-      "id": "ketchup",
-      "name": "Tomato ketchup",
-      "category": "Sauces",
-      "aliases": [
-        "tomato ketchup"
-      ]
-    },
-    {
-      "id": "mustard",
-      "name": "Yellow mustard",
-      "category": "Sauces",
-      "aliases": [
-        "yellow mustard"
-      ]
-    },
-    {
-      "id": "mayonnaise",
-      "name": "Mayonnaise",
-      "category": "Sauces",
-      "aliases": [
-        "mayo"
-      ]
-    },
-    {
-      "id": "miso",
-      "name": "Miso paste",
-      "category": "Sauces",
-      "aliases": [
-        "miso paste"
-      ]
-    },
-    {
-      "id": "gochujang",
-      "name": "Gochujang paste",
-      "category": "Sauces",
-      "aliases": [
-        "gochujang paste",
-        "korean chili paste"
-      ]
-    },
-    {
-      "id": "tomato_paste",
-      "name": "Tomato paste",
-      "category": "Sauces",
-      "aliases": [
-        "tomato paste"
-      ]
-    },
-    {
-      "id": "chili_sauce",
-      "name": "Chili sauce",
-      "category": "Sauces",
-      "aliases": [
-        "chili sauce",
-        "chilli sauce"
-      ]
-    },
-    {
-      "id": "rice_vinegar",
-      "name": "Rice vinegar",
-      "category": "Sauces",
-      "aliases": [
-        "rice vinegar"
-      ]
-    },
-    {
-      "id": "balsamic_vinegar",
-      "name": "Balsamic vinegar",
-      "category": "Sauces",
-      "aliases": [
-        "balsamic vinegar"
-      ]
-    },
-    {
-      "id": "kimchi",
-      "name": "Napa cabbage kimchi",
-      "category": "Sauces",
-      "aliases": [
-        "napa cabbage kimchi",
-        "cabbage kimchi"
-      ]
-    },
-    {
-      "id": "cooking_oil",
-      "name": "Cooking oil",
-      "category": "Pantry",
-      "aliases": [
-        "cooking oil",
-        "neutral oil"
-      ]
-    },
-    {
-      "id": "olive_oil",
-      "name": "Olive oil",
-      "category": "Pantry",
-      "aliases": [
-        "olive oil"
-      ]
-    },
-    {
-      "id": "sesame_oil",
-      "name": "Sesame oil",
-      "category": "Pantry",
-      "aliases": [
-        "sesame oil"
-      ]
-    },
-    {
-      "id": "salt",
-      "name": "Salt",
-      "category": "Pantry",
-      "aliases": [
-        "table salt"
-      ]
-    },
-    {
-      "id": "pepper",
-      "name": "Ground black pepper",
-      "category": "Pantry",
-      "aliases": [
-        "ground black pepper",
-        "black pepper"
-      ]
-    },
-    {
-      "id": "sugar",
-      "name": "Sugar",
-      "category": "Pantry",
-      "aliases": [
-        "granulated sugar"
-      ]
-    },
-    {
-      "id": "honey",
-      "name": "Honey",
-      "category": "Pantry",
-      "aliases": [
-        "pure honey"
-      ]
-    },
-    {
-      "id": "baking_powder",
-      "name": "Baking powder",
-      "category": "Pantry",
-      "aliases": [
-        "baking powder"
-      ]
-    },
-    {
-      "id": "cumin",
-      "name": "Ground cumin",
-      "category": "Pantry",
-      "aliases": [
-        "ground cumin"
-      ]
-    },
-    {
-      "id": "paprika",
-      "name": "Paprika powder",
-      "category": "Pantry",
-      "aliases": [
-        "paprika powder"
-      ]
-    },
-    {
-      "id": "turmeric",
-      "name": "Turmeric powder",
-      "category": "Pantry",
-      "aliases": [
-        "ground turmeric",
-        "turmeric powder"
-      ]
-    },
-    {
-      "id": "curry_powder",
-      "name": "Curry powder",
-      "category": "Pantry",
-      "aliases": [
-        "curry powder"
-      ]
-    },
-    {
-      "id": "peanuts",
-      "name": "Peanuts",
-      "category": "Pantry",
-      "aliases": [
-        "groundnuts",
-        "peanuts"
-      ]
-    },
-    {
-      "id": "lemon",
-      "name": "Lemon",
-      "category": "Fruit",
-      "aliases": [
-        "lemons"
-      ]
-    },
-    {
-      "id": "lime",
-      "name": "Lime",
-      "category": "Fruit",
-      "aliases": [
-        "limes"
-      ]
-    },
-    {
-      "id": "avocado",
-      "name": "Avocado",
-      "category": "Fruit",
-      "aliases": [
-        "avocados"
-      ]
-    },
-    {
-      "id": "apple",
-      "name": "Apple",
-      "category": "Fruit",
-      "aliases": [
-        "apples"
-      ]
-    },
-    {
-      "id": "banana",
-      "name": "Banana",
-      "category": "Fruit",
-      "aliases": [
-        "bananas"
-      ]
-    },
-    {
-      "id": "orange",
-      "name": "Orange",
-      "category": "Fruit",
-      "aliases": [
-        "oranges"
-      ]
-    },
-    {
-      "id": "pineapple",
-      "name": "Pineapple",
-      "category": "Fruit",
-      "aliases": [
-        "pineapples"
-      ]
-    },
-    {
-      "id": "mango",
-      "name": "Mango",
-      "category": "Fruit",
-      "aliases": [
-        "mangoes"
-      ]
-    },
-    {
-      "id": "coconut",
-      "name": "Coconut",
-      "category": "Fruit",
-      "aliases": [
-        "coconuts"
-      ]
-    },
-    {
-      "id": "strawberry",
-      "name": "Strawberry",
-      "category": "Fruit",
-      "aliases": [
-        "strawberries"
+      "steps": [
+        "Cut 1 small cauliflower into small florets of even size. Trim 1 cup green beans into 4 cm lengths. Mince 3 garlic cloves and 1 tablespoon ginger. Slice 1 chili.",
+        "Pat vegetables dry so they fry instead of steaming.",
+        "Heat 2 tablespoons oil in a wok over high heat until shimmering. Add cauliflower and beans. Stir-fry 3 minutes until cauliflower edges brown in spots.",
+        "Add 2 tablespoons water and cover 1 minute so the stems start to tenderise. Uncover; water should be gone.",
+        "Add garlic, ginger, and chili. Stir 20 seconds. Pour in 2 tablespoons soy sauce and toss 30 seconds.",
+        "Taste a floret: it should be crisp-tender, not mushy. Finish with 1 teaspoon sesame oil off the heat. Serve immediately with rice."
       ]
     }
   ]
