@@ -35,6 +35,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | `npm start` | Runs Express on port 3000 |
 | `npm run dev` | Same, but nodemon restarts the server when you edit files in `server/` |
 | `npm test` | Checks the recipe catalog |
+| `npm run bench` | Test for Find recipes: 50 users for 10s |
 
 ### Requirements
 

@@ -51,12 +51,11 @@ function canonical(name) {
   return SYNONYMS[key] || key;
 }
 
-function matchRecipe(recipe, userIngredients) {
-  const haveSet = new Set((userIngredients || []).map(canonical).filter(Boolean));
+function matchRecipe(recipe, haveSet) {
   const required = recipe.ingredients.filter((item) => !item.optional);
-  const have = required.filter((item) => haveSet.has(canonical(item.name)));
   const missing = required.filter((item) => !haveSet.has(canonical(item.name)));
-  const coverage = required.length === 0 ? 1 : have.length / required.length;
+  const haveCount = required.length - missing.length;
+  const coverage = required.length === 0 ? 1 : haveCount / required.length;
   const score = coverage * 100 - missing.length * 5;
 
   return {
@@ -68,8 +67,9 @@ function matchRecipe(recipe, userIngredients) {
 }
 
 function matchRecipes(recipes, userIngredients) {
+  const haveSet = new Set((userIngredients || []).map(canonical).filter(Boolean));
   return recipes
-    .map((recipe) => matchRecipe(recipe, userIngredients))
+    .map((recipe) => matchRecipe(recipe, haveSet))
     .filter((recipe) => recipe.matchPercent > 0)
     .sort((a, b) => {
       if (b.score !== a.score) return b.score - a.score;
