@@ -1,51 +1,18 @@
 const express = require("express");
 const crypto = require("node:crypto");
-const fs = require("node:fs/promises");
-const path = require("node:path");
 const { promisify } = require("node:util");
+const users = require("../services/userStore");
 
 const router = express.Router();
 const scrypt = promisify(crypto.scrypt);
-const usersFile = process.env.AUTH_DATA_FILE || path.join(__dirname, "../data/users.json");
 const cookieName = "fridgechef_session";
 const sessionDuration = 12 * 60 * 60 * 1000;
 const scryptOptions = { N: 1 << 15, r: 8, p: 3, maxmem: 64 * 1024 * 1024 };
 const sessions = new Map();
 const attempts = new Map();
-let signupQueue = Promise.resolve();
 
 function publicUser(user) {
   return { id: user.id, username: user.username, email: user.email };
-}
-
-async function readUsers() {
-  try {
-    return JSON.parse(await fs.readFile(usersFile, "utf8"));
-  } catch (error) {
-    if (error.code === "ENOENT") return [];
-    throw error;
-  }
-}
-
-async function writeUsers(users) {
-  await fs.mkdir(path.dirname(usersFile), { recursive: true });
-  const temporaryFile = `${usersFile}.${crypto.randomUUID()}.tmp`;
-  try {
-    await fs.writeFile(temporaryFile, JSON.stringify(users, null, 2), {
-      flag: "wx",
-      mode: 0o600,
-    });
-    await fs.rename(temporaryFile, usersFile);
-  } catch (error) {
-    await fs.rm(temporaryFile, { force: true });
-    throw error;
-  }
-}
-
-function queueSignup(task) {
-  const result = signupQueue.then(task);
-  signupQueue = result.catch(() => {});
-  return result;
 }
 
 async function hashPassword(password) {
@@ -96,8 +63,7 @@ async function requirePageAuth(req, res, next) {
   const session = currentSession(req);
   if (!session) return res.redirect(303, "/login.html");
   try {
-    const users = await readUsers();
-    if (!users.some((user) => user.id === session.userId)) {
+    if (!users.getById(session.userId)) {
       return res.redirect(303, "/login.html");
     }
     return next();
@@ -171,18 +137,8 @@ router.post("/signup", sameOrigin, rateLimit, async (req, res, next) => {
   }
 
   try {
-    const result = await queueSignup(async () => {
-      const users = await readUsers();
-      if (users.some((user) => user.email === normalizedEmail)) return null;
-      const user = {
-        id: crypto.randomUUID(),
-        username: name,
-        email: normalizedEmail,
-        ...(await hashPassword(password)),
-      };
-      await writeUsers([...users, user]);
-      return user;
-    });
+    const credentials = await hashPassword(password);
+    const result = users.createUser(name, normalizedEmail, credentials);
     if (!result) return res.status(409).json({ error: "Email is already registered.", field: "email" });
     issueSession(req, res, result);
     return res.status(201).json({ user: publicUser(result) });
@@ -199,8 +155,7 @@ router.post("/login", sameOrigin, rateLimit, async (req, res, next) => {
   }
 
   try {
-    const users = await readUsers();
-    const user = users.find((candidate) => candidate.email === normalizedEmail);
+    const user = users.getByEmail(normalizedEmail);
     if (!(await verifyPassword(password, user))) {
       return res.status(401).json({ error: "Invalid email or password." });
     }
@@ -215,8 +170,7 @@ router.get("/me", async (req, res, next) => {
   const session = currentSession(req);
   if (!session) return res.status(401).json({ error: "Not signed in." });
   try {
-    const users = await readUsers();
-    const user = users.find((candidate) => candidate.id === session.userId);
+    const user = users.getById(session.userId);
     if (!user) return res.status(401).json({ error: "Not signed in." });
     return res.json({ user: publicUser(user) });
   } catch (error) {

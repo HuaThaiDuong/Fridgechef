@@ -34,10 +34,10 @@ Open [http://localhost:3000](http://localhost:3000).
 |---------|--------------|
 | `npm start` | Runs Express on port 3000 |
 | `npm run dev` | Same, but nodemon restarts the server when you edit files in `server/` |
-| `npm test` | Runs `scripts/check-catalog.js` — checks ingredient coverage, synonym parity, and a smoke test |
+| `npm test` | Checks the recipe catalog |
 
 ### Requirements
 
-- Node.js 18 or newer
+- Node.js 22.13 or newer
 - A browser
 
