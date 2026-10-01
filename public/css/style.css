@@ -8,12 +8,12 @@
 html{
     font-family: var(--font-body);
     font-size: var(--font-size-body);
-    color: var(--color-text); 
+    color: var(--color-text);
     text-align: center;
 }
 
 body{
-    
+
     min-height: 100vh;
 }
 
@@ -56,7 +56,7 @@ form{
 form > div{
     width:100%;
     display:flex;
-    justify-content: center;   
+    justify-content: center;
 }
 
 form label {
@@ -97,6 +97,7 @@ form input:hover{
 
 form input:focus{
     outline:none;
+    box-shadow: none;
 }
 
 form button{
@@ -112,6 +113,7 @@ form button{
 
 form button:focus{
     outline:none;
+    box-shadow:none;
 }
 
 form div.incorrect label{
