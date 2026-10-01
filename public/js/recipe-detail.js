@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.title = `${recipe.name} — FridgeChef`;
     document.getElementById("recipe-title").textContent = recipe.name;
     const photo = document.getElementById("recipe-image");
+    photo.onerror = () => { photo.onerror = null; photo.src = `/img/${recipe.id}.jpg`; };
     photo.src = recipe.image;
     photo.alt = recipe.name;
     photo.loading = "lazy";

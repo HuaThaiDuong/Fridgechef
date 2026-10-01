@@ -97,6 +97,7 @@ function renderCards(recipes) {
     const label = node.querySelector(".match-label");
 
     link.href = `/recipe.html?id=${encodeURIComponent(recipe.id)}`;
+    image.onerror = () => { image.onerror = null; image.src = `/img/${recipe.id}.jpg`; };
     image.src = recipe.image;
     image.alt = recipe.name;
     image.loading = "lazy";
@@ -164,6 +165,7 @@ async function renderRecent() {
       const bar = node.querySelector(".match-bar");
       const label = node.querySelector(".match-label");
       link.href = `/recipe.html?id=${encodeURIComponent(recipe.id)}`;
+      image.onerror = () => { image.onerror = null; image.src = `/img/${recipe.id}.jpg`; };
       image.src = recipe.image;
       image.alt = recipe.name;
       image.loading = "lazy";
@@ -202,6 +204,12 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("filter-cuisine")?.addEventListener("change", renderCurrent);
   document.getElementById("filter-time")?.addEventListener("change", renderCurrent);
   document.getElementById("filter-difficulty")?.addEventListener("change", renderCurrent);
+  document.getElementById("reset-filters")?.addEventListener("click", () => {
+    document.querySelectorAll(".filter-select").forEach((select) => {
+      select.value = "";
+    });
+    renderCurrent();
+  });
 
   document.getElementById("browse-all")?.addEventListener("click", async () => {
     sessionStorage.removeItem("fridgechef.featuredId");

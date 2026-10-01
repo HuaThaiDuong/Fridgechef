@@ -1,4 +1,3 @@
-// Load test for "Find recipes". Start the server first (npm start), then run: npm run bench
 const API_URL = "http://localhost:3000/api/recipes/match";
 const BODY = JSON.stringify({ ingredients: ["egg", "tomato", "onion", "garlic"] });
 const USERS = 50;       
